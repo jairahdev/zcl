@@ -6,7 +6,8 @@ export default {
 			"name": "root",
 			"children": [
 				"6195d547255a6d001e9c5f4d",
-				"6195d547255a6d001e9c5f4f"
+				"6195d547255a6d001e9c5f4f",
+				"619a43d054a110001e4a66d4"
 			]
 		},
 		"6195d547255a6d001e9c5f4d": {
@@ -18,6 +19,11 @@ export default {
 			"id": "6195d547255a6d001e9c5f4f",
 			"name": "index",
 			"pageUrl": "index"
+		},
+		"619a43d054a110001e4a66d4": {
+			"id": "619a43d054a110001e4a66d4",
+			"pageUrl": "profile",
+			"name": "Profile"
 		}
 	},
 	"mode": "production",

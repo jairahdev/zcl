@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Image, Icon, Box, Section, Button, Structure } from "@quarkly/widgets";
+import { Theme, Link, Text, Image, Icon, Box, Section, Button, Span } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override } from "@quarkly/components";
@@ -40,8 +40,13 @@ export default (() => {
 				text-align="center"
 				margin="96px 0 0 0"
 				border-color="#c58d2d"
-				width="auto"
-				height="auto"
+				width="56px"
+				height="56px"
+				hover-border-radius="100%"
+				hover-border-color="rgba(225, 230, 223, 1)"
+				min-width="56px"
+				min-height="56px"
+				hover-transition="all 0.6s ease-in-out 0s"
 			>
 				<Icon
 					category="md"
@@ -52,9 +57,15 @@ export default (() => {
 					border-style="solid"
 					border-radius="100%"
 					padding="10px 10px 10px 10px"
-					width="auto"
-					height="auto"
 					color="#c58d2d"
+					hover-color="rgba(225, 230, 223, 1)"
+					hover-background="c58d2d"
+					hover-border-color="rgba(225, 230, 223, 1)"
+					align-items="center"
+					width="56px"
+					height="56px"
+					min-width="56px"
+					min-height="56px"
 				/>
 			</Box>
 		</Section>
@@ -146,7 +157,17 @@ export default (() => {
 				<Text margin="0px" text-align="justify" color="rgba(225, 230, 223, 0.7)" font="100 14px/180% &quot;Public Sans&quot;, sans-serif">
 					Born on the 22nd of November, 2001, the Chinese performer has been gracing our eyes with his talents ever since he was a child. With an extensive discography and filmography including his solo albums and movie appearances, Zhong Chenle has proven to be quite the versatile artist. Ever since he claimed the title of the youngest singer to hold a solo performance at the Golden Hall of Vienna in Austria, the music star has been steadily grabbing everyone’s hearts. Now a member of Korean Pop group NCT Dream (a sub-unit of NCT), Chenle continuously impresses us with his heavenly vocals and charming moves.
 				</Text>
-				<Button font="italic 100 14px/180% &quot;Public Sans&quot;, sans-serif" color="rgba(225, 230, 223, 0.9)" background="rgba(255, 255, 255, 0)" padding="8px 24px 8px 0">
+				<Button
+					font="italic 100 14px/180% &quot;Public Sans&quot;, sans-serif"
+					color="rgba(225, 230, 223, 0.9)"
+					background="rgba(255, 255, 255, 0)"
+					padding="8px 24px 8px 0"
+					hover-font="italic 400 14px/180% &quot;Public Sans&quot;, sans-serif"
+					hover-letter-spacing=".5px"
+					hover-transition="all 0.3s ease-in-out 0s"
+					transition="all 0.3s ease-in-out 0s"
+					cursor="help"
+				>
 					Learn more 
 →{" "}
 				</Button>
@@ -175,6 +196,11 @@ export default (() => {
 				order="-1"
 				display="flex"
 				grid-row="4"
+				hover-background="#c58d2d"
+				hover-border-color="none"
+				hover-color="#151515"
+				hover-transition="all .6s ease-in-out 0s"
+				hover-border-width="0px"
 			>
 				<Image
 					width="32px"
@@ -200,6 +226,11 @@ export default (() => {
 				order="-1"
 				display="flex"
 				grid-row="5"
+				hover-background="#c58d2d"
+				hover-border-color="none"
+				hover-color="#151515"
+				hover-transition="all .6s ease-in-out 0s"
+				hover-border-width="0px"
 			>
 				<Image
 					width="32px"
@@ -225,6 +256,11 @@ export default (() => {
 				order="-1"
 				display="flex"
 				grid-row="5"
+				hover-background="#c58d2d"
+				hover-border-color="none"
+				hover-color="#151515"
+				hover-transition="all .6s ease-in-out 0s"
+				hover-border-width="0px"
 			>
 				<Image
 					width="32px"
@@ -250,6 +286,11 @@ export default (() => {
 				order="-1"
 				display="flex"
 				grid-row="4"
+				hover-background="#c58d2d"
+				hover-border-color="none"
+				hover-color="#151515"
+				hover-transition="all .6s ease-in-out 0s"
+				hover-border-width="0px"
 			>
 				<Image
 					width="32px"
@@ -294,6 +335,9 @@ export default (() => {
 				z-index="1"
 				justify-self="start"
 				margin="0px 0px 0px -10px"
+				hover-transform="rotate(42deg) scale(1.5)"
+				hover-transition="all 0.6s ease-in-out 0s"
+				transition="all 0.6s ease-in-out 0s"
 			/>
 			<Image
 				width="70%"
@@ -322,6 +366,11 @@ export default (() => {
 				grid-column="1"
 				align-self="end"
 				margin="-50px 0px 20px 0px"
+				transition="all 0.3s ease-in-out 0s"
+				hover-transition="all 0.3s ease-in-out 0s"
+				cursor="help"
+				hover-letter-spacing=".5 px"
+				hover-font="italic 300 14px/180% &quot;Public Sans&quot;, sans-serif"
 			>
 				Read more 
 →{" "}
@@ -335,8 +384,8 @@ export default (() => {
 			height="100%"
 		>
 			<Override slot="SectionContent" display="grid" grid-template-columns="repeat (3,2fr)" grid-template-rows="1fr" />
-			<Image width="100%" src="https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/WORK_1.png?v=2021-11-21T11:01:52.668Z" grid-column="2" grid-row="1" />
-			<Image src="https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/WORK_1.png?v=2021-11-21T11:01:52.668Z" grid-column="2" grid-row="3" width="100%" />
+			<Image width="100%" src="https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/WORK_6.png?v=2021-11-21T13:28:24.923Z" grid-column="2" grid-row="1" />
+			<Image src="https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/WORK_4.png?v=2021-11-21T13:21:23.953Z" grid-column="2" grid-row="3" width="100%" />
 			<Text
 				grid-row="2"
 				grid-column="3"
@@ -345,7 +394,7 @@ export default (() => {
 				text-align="center"
 				font="200 16px &quot;Public Sans&quot;, sans-serif"
 			>
-				Chewing Gum (2016)
+				You Are There (2014)
 			</Text>
 			<Text
 				grid-row="5"
@@ -355,7 +404,7 @@ export default (() => {
 				text-align="center"
 				font="200 16px &quot;Public Sans&quot;, sans-serif"
 			>
-				Chewing Gum (2016)
+				Free Love (2021)
 			</Text>
 			<Button
 				font="italic 100 14px/180% &quot;Public Sans&quot;, sans-serif"
@@ -366,6 +415,11 @@ export default (() => {
 				grid-column="1 / span 3"
 				align-self="end"
 				margin="30px 0px 0px 0px"
+				transition="all 0.3s ease-in-out 0s"
+				hover-transition="all 0.3s ease-in-out 0s"
+				cursor="help"
+				hover-letter-spacing=".5 px"
+				hover-font="italic 300 14px/180% &quot;Public Sans&quot;, sans-serif"
 			>
 				View all  →{" "}
 			</Button>
@@ -377,7 +431,7 @@ export default (() => {
 				text-align="center"
 				font="200 16px &quot;Public Sans&quot;, sans-serif"
 			>
-				Chewing Gum (2016)
+				My Wing (2011)
 			</Text>
 			<Text
 				grid-row="5"
@@ -387,7 +441,7 @@ export default (() => {
 				text-align="center"
 				font="200 16px &quot;Public Sans&quot;, sans-serif"
 			>
-				Chewing Gum (2016)
+				Too Good (2021)
 			</Text>
 			<Text
 				grid-row="2"
@@ -397,7 +451,7 @@ export default (() => {
 				text-align="center"
 				font="200 16px &quot;Public Sans&quot;, sans-serif"
 			>
-				Chewing Gum (2016)
+				Tomorrow (2010)
 			</Text>
 			<Text
 				grid-row="5"
@@ -407,45 +461,69 @@ export default (() => {
 				text-align="center"
 				font="200 16px &quot;Public Sans&quot;, sans-serif"
 			>
-				Chewing Gum (2016)
+				12월 24일 (2020)
 			</Text>
-			<Image src="https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/WORK_1.png?v=2021-11-21T11:01:52.668Z" grid-column="3" grid-row="3" width="100%" />
-			<Image src="https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/WORK_1.png?v=2021-11-21T11:01:52.668Z" grid-row="1" width="100%" grid-column="3" />
-			<Image src="https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/WORK_1.png?v=2021-11-21T11:01:52.668Z" grid-column="1" grid-row="1" width="100%" />
-			<Image src="https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/WORK_1.png?v=2021-11-21T11:01:52.668Z" grid-column="1" grid-row="3" width="100%" />
+			<Image src="https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/WORK_8.png?v=2021-11-21T13:42:59.579Z" grid-column="3" grid-row="3" width="100%" />
+			<Image src="https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/WORK_5.png?v=2021-11-21T13:25:27.902Z" grid-row="1" width="100%" grid-column="3" />
+			<Image src="https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/WORK_3.png?v=2021-11-21T13:20:55.450Z" grid-column="1" grid-row="1" width="100%" />
+			<Image src="https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/WORK_7.png?v=2021-11-21T13:42:48.142Z" grid-column="1" grid-row="3" width="100%" />
 		</Section>
 		<Section padding="100px 0 24px 0" quarkly-title="FOOTER">
-			<Structure color="#ffffff" font="16px --fontFamily-googlePublicSans">
-				<Override slot="Content">
-					<Override slot="cell-0">
-						<Text>
-							ZHONG CHENLE
-						</Text>
-						<Text border-color="#" color="#b9b9b9">
-							Designed by Jairah 2021
-						</Text>
-						<Text border-color="#" color="#b9b9b9">
-							Disclaimer:{" "}
-						</Text>
-					</Override>
-					<Override slot="cell-1">
-						<Text border-color="#" color="#ffffff">
-							Navigate
-						</Text>
-						<Text border-color="#" color="#b9b9b9">
-							Home
-						</Text>
-					</Override>
-					<Override slot="cell-2">
-						<Text border-color="#" color="#ffffff">
-							Resources
-						</Text>
-						<Text border-color="#" color="#b9b9b9">
-							fy!nct
-						</Text>
-					</Override>
-				</Override>
-			</Structure>
+			<Override slot="SectionContent" display="grid" grid-template-columns="1fr 2fr repeat(2, 1fr)" />
+			<Box grid-column="1" grid-row="1" align-self="center" justify-self="center">
+				<Image width="64px" height="64px" src="https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/ZCL-white.svg?v=2021-11-20T16:12:54.507Z" margin="auto auto auto auto" />
+			</Box>
+			<Box grid-column="4" grid-row="1" padding="10px 10px 10px 10px" background="none">
+				<Text>
+					Acknowledgements
+				</Text>
+				<Text color="rgba(225, 230, 223, 0.7)" font="300 14px &quot;Public Sans&quot;, sans-serif">
+					smtown-nctzens for info
+				</Text>
+				<Text color="rgba(225, 230, 223, 0.7)" font="300 14px &quot;Public Sans&quot;, sans-serif">
+					FY!NCT for images
+				</Text>
+			</Box>
+			<Box grid-column="3" grid-row="1" padding="10px 10px 10px 10px" background="none">
+				<Text>
+					Navigation
+				</Text>
+				<Text color="rgba(225, 230, 223, 0.7)" font="300 14px &quot;Public Sans&quot;, sans-serif">
+					Home
+				</Text>
+				<Text color="rgba(225, 230, 223, 0.7)" font="300 14px &quot;Public Sans&quot;, sans-serif">
+					Profile
+				</Text>
+				<Text color="rgba(225, 230, 223, 0.7)" font="300 14px &quot;Public Sans&quot;, sans-serif">
+					Philosophy
+				</Text>
+				<Text color="rgba(225, 230, 223, 0.7)" font="300 14px &quot;Public Sans&quot;, sans-serif">
+					Works
+				</Text>
+			</Box>
+			<Box grid-column="2" grid-row="1" padding="10px 10px 10px 10px" background="none">
+				<Text>
+					Project
+				</Text>
+				<Text color="rgba(225, 230, 223, 0.7)" font="300 14px &quot;Public Sans&quot;, sans-serif">
+					<Span
+						overflow-wrap="normal"
+						word-break="normal"
+						white-space="normal"
+						text-indent="0"
+						text-overflow="clip"
+						hyphens="manual"
+					>
+						© Jairah  |  Website Design, Copy, and Visual Design
+						<br />
+						<br />
+						See this project on Behance and Tumblr.
+						<br />
+						<br />
+						Disclaimer: Fair use keme
+					</Span>
+				</Text>
+			</Box>
 		</Section>
 		<Link
 			font={"--capture"}
