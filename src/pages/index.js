@@ -13,10 +13,10 @@ export default (() => {
 				Quarkly export
 			</title>
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
-			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
+			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/Favicon.png?v=2021-11-21T13:45:50.370Z"} type={"image/x-icon"} />
 		</Helmet>
 		<Section
-			background="url(https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/4.png?v=2021-11-20T15:31:12.863Z) 40% 40%,linear-gradient(0deg,rgba(4, 8, 12, 0.6) 0%,rgba(4, 8, 12, 0.6) 100%),--color-darkL2 url(https://images.unsplash.com/photo-1510125594188-5afc74c8cc43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80) center/cover"
+			background="url(https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/4.png?v=2021-11-20T15:31:12.863Z) 40% 40%"
 			padding="64px 0"
 			sm-padding="40px 0"
 			color="--light"

@@ -34,6 +34,8 @@ export default {
 			"font": "16px --fontFamily-googlePublicSans",
 			"color": "#e1e6df"
 		},
-		"seo": {}
+		"seo": {
+			"favicon_32px": "https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/Favicon.png?v=2021-11-21T13:45:50.370Z"
+		}
 	}
 }
