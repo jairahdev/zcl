@@ -17,6 +17,16 @@ const pageStyles = {
         "background": "#151515",
         "font": "16px --fontFamily-googlePublicSans",
         "color": "#e1e6df"
+    },
+    "philosophy": {
+        "background": "#151515",
+        "font": "16px --fontFamily-googlePublicSans",
+        "color": "#e1e6df"
+    },
+    "projects": {
+        "background": "#151515",
+        "font": "16px --fontFamily-googlePublicSans",
+        "color": "#e1e6df"
     }
 };
 

@@ -4,13 +4,14 @@ import { Theme, Link, Text, Image, Icon, Box, Section, Button, Span } from "@qua
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override } from "@quarkly/components";
+import * as Components from "components";
 import { MdArrowDownward } from "react-icons/md";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
 		<Helmet>
 			<title>
-				Quarkly export
+				Zhong Chenle
 			</title>
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/Favicon.png?v=2021-11-21T13:45:50.370Z"} type={"image/x-icon"} />
@@ -25,7 +26,7 @@ export default (() => {
 			height="100vh"
 		>
 			<Override slot="SectionContent" align-items="center" />
-			<Text color="rgba(135, 135, 135, 0.32)" font="300 16px/24px ">
+			<Text color="rgba(135, 135, 135, 0.32)" font="300 16px/24px " md-font="300 12px/24px ">
 				MADE BY STUDIO FUGUE
 			</Text>
 			<Image
@@ -35,6 +36,10 @@ export default (() => {
 				text-align="center"
 				display="block"
 				margin="15% 0px 0px 0px"
+				lg-height="100%"
+				lg-width="100%"
+				md-height="512px"
+				md-width="512px"
 			/>
 			<Box
 				text-align="center"
@@ -47,6 +52,8 @@ export default (() => {
 				min-width="56px"
 				min-height="56px"
 				hover-transition="all 0.6s ease-in-out 0s"
+				md-width="20%"
+				md-height="20%"
 			>
 				<Icon
 					category="md"
@@ -66,6 +73,8 @@ export default (() => {
 					height="56px"
 					min-width="56px"
 					min-height="56px"
+					md-height="20%"
+					md-width="20%"
 				/>
 			</Box>
 		</Section>
@@ -75,6 +84,7 @@ export default (() => {
 			min-width="100%"
 			height="100vh"
 			quarkly-title="Profile"
+			padding="0 0 24px 0"
 		>
 			<Override
 				slot="SectionContent"
@@ -87,43 +97,11 @@ export default (() => {
 				height="inherit"
 				grid-template-rows="repeat(2,1fr) 2fr repeat(2, 1fr)"
 			/>
-			<Box
-				display="grid"
-				grid-template-columns="1fr repeat(2, 2fr) repeat(3,2fr)"
-				grid-column="1 / span 6"
-				grid-row="1"
-				border-color="#c58d2d"
-				border-width="0 0 1px 0"
-				border-style="solid"
-				height="64px"
-				padding="0px 0px 24px 0px"
-				left="0px"
-				right="0.48399999999986676px"
-				bottom="1876.41px"
-				top="985.594px"
-				width="inherit"
-				quarkly-title="NAV"
-				margin="0px 0px 24px 0px"
-			>
-				<Image
-					width="48px"
-					height="48px"
-					src="https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/ZCL-white.svg?v=2021-11-20T16:12:54.507Z"
-					display="block"
-					margin="auto auto auto auto"
-					grid-row="1"
-					grid-column="1"
-				/>
-				<Button grid-column="4" background="rgba(0, 119, 204, 0)" font="normal normal 100 16px/1.5 --fontFamily-googlePublicSans" color="rgba(225, 230, 223, 0.7)">
-					PROFILE
-				</Button>
-				<Button grid-column="5" background="rgba(0, 119, 204, 0)" font="normal normal 100 16px/1.5 --fontFamily-googlePublicSans" color="rgba(225, 230, 223, 0.7)">
-					PHILOSOPHY
-				</Button>
-				<Button grid-column="6" background="rgba(0, 119, 204, 0)" font="normal normal 100 16px/1.5 --fontFamily-googlePublicSans" color="rgba(225, 230, 223, 0.7)">
-					WORKS
-				</Button>
-			</Box>
+			<Components.Nav>
+				<Override slot="button" />
+				<Override slot="button2" />
+				<Override slot="button1" />
+			</Components.Nav>
 			<Box
 				background="transparent"
 				grid-row="2"
@@ -135,10 +113,11 @@ export default (() => {
 				<Text
 					as="h1"
 					margin="8px 0px 32px"
-					font="72px --fontFamily-googlePlayfairDisplay"
-					md-font="--headline2"
+					font="72px --fontFamily-Abygaer"
+					md-font="32px --fontFamily-googlePlayfairDisplay"
 					color="#c58d2d"
 					max-width="850px"
+					lg-font="52px --fontFamily-googlePlayfairDisplay"
 				>
 					Zhong Chenle
 				</Text>
@@ -153,13 +132,24 @@ export default (() => {
 				grid-column="2 / span 2"
 				align-self="start"
 				margin="-20px 0px 0px 0px"
+				lg-font="10px/140% &quot;Public Sans&quot;, sans-serif"
+				md-font="8px/140% &quot;Public Sans&quot;, sans-serif"
+				sm-font="6px/140% &quot;Public Sans&quot;, sans-serif"
 			>
-				<Text margin="0px" text-align="justify" color="rgba(225, 230, 223, 0.7)" font="100 14px/180% &quot;Public Sans&quot;, sans-serif">
+				<Text
+					margin="0px"
+					text-align="justify"
+					color="rgba(214, 214, 214, 0.7)"
+					font="100 14px/180% &quot;Public Sans&quot;, sans-serif"
+					lg-font="100 12px/180% &quot;Public Sans&quot;, sans-serif"
+					md-font="100 9px/180% &quot;Public Sans&quot;, sans-serif"
+					sm-font="100 8px/180% &quot;Public Sans&quot;, sans-serif"
+				>
 					Born on the 22nd of November, 2001, the Chinese performer has been gracing our eyes with his talents ever since he was a child. With an extensive discography and filmography including his solo albums and movie appearances, Zhong Chenle has proven to be quite the versatile artist. Ever since he claimed the title of the youngest singer to hold a solo performance at the Golden Hall of Vienna in Austria, the music star has been steadily grabbing everyone’s hearts. Now a member of Korean Pop group NCT Dream (a sub-unit of NCT), Chenle continuously impresses us with his heavenly vocals and charming moves.
 				</Text>
 				<Button
 					font="italic 100 14px/180% &quot;Public Sans&quot;, sans-serif"
-					color="rgba(225, 230, 223, 0.9)"
+					color="rgba(214, 214, 214, 0.9)"
 					background="rgba(255, 255, 255, 0)"
 					padding="8px 24px 8px 0"
 					hover-font="italic 400 14px/180% &quot;Public Sans&quot;, sans-serif"
@@ -167,6 +157,12 @@ export default (() => {
 					hover-transition="all 0.3s ease-in-out 0s"
 					transition="all 0.3s ease-in-out 0s"
 					cursor="help"
+					md-font="italic 100 12px/180% &quot;Public Sans&quot;, sans-serif"
+					sm-hover-font="italic 400 10px/180% &quot;Public Sans&quot;, sans-serif"
+					md-width="auto"
+					md-hover-font="300 12px --fontFamily-googlePublicSans"
+					md-hover-letter-spacing=".5px"
+					md-letter-spacing="0.5px"
 				>
 					Learn more 
 →{" "}
@@ -181,7 +177,14 @@ export default (() => {
 				width="auto"
 				height="100%"
 			>
-				<Image src="https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/LANDING_1.png?v=2021-11-20T18:14:10.972Z" border-radius="50px" height="100%" />
+				<Image
+					src="https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/LANDING_1.png?v=2021-11-20T18:14:10.972Z"
+					border-radius="50px"
+					height="100%"
+					sm-border-radius="25px"
+					sm-height="calc(100vh - 40%)"
+					sm-margin="0px 0px 0px -30px"
+				/>
 			</Box>
 			<Box
 				background="transparent"
@@ -201,6 +204,10 @@ export default (() => {
 				hover-color="#151515"
 				hover-transition="all .6s ease-in-out 0s"
 				hover-border-width="0px"
+				lg-height="60px"
+				lg-margin="20px 0px 0px 0px"
+				md-height="60px"
+				sm-height="40px"
 			>
 				<Image
 					width="32px"
@@ -208,8 +215,21 @@ export default (() => {
 					src="https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/flower.svg?v=2021-11-21T09:24:50.822Z"
 					margin="auto 0px auto 20px"
 					display="inline"
+					md-width="24px"
+					md-height="24px"
+					sm-margin="auto 0px auto 10px"
 				/>
-				<Text display="inline" height="auto" margin="28px 0px 16px 25px" font="400 18px &quot;Public Sans&quot;, sans-serif">
+				<Text
+					display="inline"
+					height="auto"
+					margin="28px 0px 16px 25px"
+					font="400 18px &quot;Public Sans&quot;, sans-serif"
+					lg-margin="18PX 0px 16px 20px"
+					lg-font="400 14px &quot;Public Sans&quot;, sans-serif"
+					md-font="400 10px &quot;Public Sans&quot;, sans-serif"
+					md-margin="22px 0px 16px 20px"
+					sm-margin="14px 0px 16px 10px"
+				>
 					Singer
 				</Text>
 			</Box>
@@ -231,6 +251,9 @@ export default (() => {
 				hover-color="#151515"
 				hover-transition="all .6s ease-in-out 0s"
 				hover-border-width="0px"
+				lg-height="60px"
+				md-height="60px"
+				sm-height="40px"
 			>
 				<Image
 					width="32px"
@@ -238,8 +261,21 @@ export default (() => {
 					src="https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/flower.svg?v=2021-11-21T09:24:50.822Z"
 					margin="auto 0px auto 20px"
 					display="inline"
+					md-width="24px"
+					md-height="24px"
+					sm-margin="auto 0px auto 10px"
 				/>
-				<Text display="inline" height="auto" margin="28px 0px 16px 25px" font="400 18px &quot;Public Sans&quot;, sans-serif">
+				<Text
+					display="inline"
+					height="auto"
+					margin="28px 0px 16px 25px"
+					font="400 18px &quot;Public Sans&quot;, sans-serif"
+					lg-margin="18PX 0px 16px 20px"
+					lg-font="400 14px &quot;Public Sans&quot;, sans-serif"
+					md-font="400 10px &quot;Public Sans&quot;, sans-serif"
+					md-margin="22px 0px 16px 20px"
+					sm-margin="14px 0px 16px 10px"
+				>
 					Performer
 				</Text>
 			</Box>
@@ -261,6 +297,9 @@ export default (() => {
 				hover-color="#151515"
 				hover-transition="all .6s ease-in-out 0s"
 				hover-border-width="0px"
+				lg-height="60px"
+				md-height="60px"
+				sm-height="40px"
 			>
 				<Image
 					width="32px"
@@ -268,8 +307,21 @@ export default (() => {
 					src="https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/flower.svg?v=2021-11-21T09:24:50.822Z"
 					margin="auto 0px auto 20px"
 					display="inline"
+					md-width="24px"
+					md-height="24px"
+					sm-margin="auto 0px auto 10px"
 				/>
-				<Text display="inline" height="auto" margin="28px 0px 16px 25px" font="400 18px &quot;Public Sans&quot;, sans-serif">
+				<Text
+					display="inline"
+					height="auto"
+					margin="28px 0px 16px 25px"
+					font="400 18px &quot;Public Sans&quot;, sans-serif"
+					lg-margin="18PX 0px 16px 20px"
+					lg-font="400 14px &quot;Public Sans&quot;, sans-serif"
+					md-font="400 10px &quot;Public Sans&quot;, sans-serif"
+					md-margin="22px 0px 16px 20px"
+					sm-margin="14px 0px 16px 10px"
+				>
 					Radio Host
 				</Text>
 			</Box>
@@ -291,6 +343,10 @@ export default (() => {
 				hover-color="#151515"
 				hover-transition="all .6s ease-in-out 0s"
 				hover-border-width="0px"
+				lg-height="60px"
+				lg-margin="20px 0px 0px 0px"
+				md-height="60px"
+				sm-height="40px"
 			>
 				<Image
 					width="32px"
@@ -298,8 +354,21 @@ export default (() => {
 					src="https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/flower.svg?v=2021-11-21T09:24:50.822Z"
 					margin="auto 0px auto 20px"
 					display="inline"
+					md-width="24px"
+					md-height="24px"
+					sm-margin="auto 0px auto 10px"
 				/>
-				<Text display="inline" height="auto" margin="28px 0px 16px 25px" font="400 18px &quot;Public Sans&quot;, sans-serif">
+				<Text
+					display="inline"
+					height="auto"
+					margin="28px 0px 16px 25px"
+					font="400 18px &quot;Public Sans&quot;, sans-serif"
+					lg-margin="18PX 0px 16px 20px"
+					lg-font="400 14px &quot;Public Sans&quot;, sans-serif"
+					md-font="400 10px &quot;Public Sans&quot;, sans-serif"
+					md-margin="22px 0px 16px 20px"
+					sm-margin="14px 0px 16px 10px"
+				>
 					Dancer
 				</Text>
 			</Box>
@@ -338,6 +407,9 @@ export default (() => {
 				hover-transform="rotate(42deg) scale(1.5)"
 				hover-transition="all 0.6s ease-in-out 0s"
 				transition="all 0.6s ease-in-out 0s"
+				sm-width="64px"
+				sm-height="64px"
+				sm-margin="0px 0px 0px -20px"
 			/>
 			<Image
 				width="70%"
@@ -359,7 +431,7 @@ export default (() => {
 			/>
 			<Button
 				font="italic 100 14px/180% &quot;Public Sans&quot;, sans-serif"
-				color="rgba(225, 230, 223, 0.9)"
+				color="rgba(214, 214, 214, 0.9)"
 				background="rgba(255, 255, 255, 0)"
 				grid-row="1"
 				justify-self="start"
@@ -371,6 +443,16 @@ export default (() => {
 				cursor="help"
 				hover-letter-spacing=".5 px"
 				hover-font="italic 300 14px/180% &quot;Public Sans&quot;, sans-serif"
+				md-font="italic 100 12px/180% &quot;Public Sans&quot;, sans-serif"
+				md-margin="0px 0px 0px 0px"
+				sm-margin="30px 0px -30px 0px"
+				sm-padding="8px 5px 8px 5px"
+				sm-width="auto"
+				sm-hover-font="italic 300 10px/180% &quot;Public Sans&quot;, sans-serif"
+				md-width="auto"
+				md-hover-font="300 12px --fontFamily-googlePublicSans"
+				md-hover-letter-spacing=".5px"
+				md-letter-spacing="0.5px"
 			>
 				Read more 
 →{" "}
@@ -382,8 +464,17 @@ export default (() => {
 			min-width="100vh"
 			width="100%"
 			height="100%"
+			sm-padding="24px 20px 24px 20px"
+			md-padding="24px 20px 24px 20px"
+			quarkly-title="Works"
 		>
-			<Override slot="SectionContent" display="grid" grid-template-columns="repeat (3,2fr)" grid-template-rows="1fr" />
+			<Override
+				slot="SectionContent"
+				display="grid"
+				grid-template-columns="repeat (3,2fr)"
+				grid-template-rows="1fr"
+				sm-grid-template-rows="1fr"
+			/>
 			<Image width="100%" src="https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/WORK_6.png?v=2021-11-21T13:28:24.923Z" grid-column="2" grid-row="1" />
 			<Image src="https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/WORK_4.png?v=2021-11-21T13:21:23.953Z" grid-column="2" grid-row="3" width="100%" />
 			<Text
@@ -393,6 +484,9 @@ export default (() => {
 				align-self="center"
 				text-align="center"
 				font="200 16px &quot;Public Sans&quot;, sans-serif"
+				sm-font="200 12px &quot;Public Sans&quot;, sans-serif"
+				sm-margin="16px 0px 16px 0px"
+				md-font="200 14px &quot;Public Sans&quot;, sans-serif"
 			>
 				You Are There (2014)
 			</Text>
@@ -403,12 +497,15 @@ export default (() => {
 				align-self="center"
 				text-align="center"
 				font="200 16px &quot;Public Sans&quot;, sans-serif"
+				sm-font="200 12px &quot;Public Sans&quot;, sans-serif"
+				sm-margin="16px 0px 16px 0px"
+				md-font="200 14px &quot;Public Sans&quot;, sans-serif"
 			>
 				Free Love (2021)
 			</Text>
 			<Button
 				font="italic 100 14px/180% &quot;Public Sans&quot;, sans-serif"
-				color="rgba(225, 230, 223, 0.9)"
+				color="rgba(214, 214, 214, 0.9)"
 				background="rgba(255, 255, 255, 0)"
 				grid-row="6"
 				justify-self="end"
@@ -420,6 +517,13 @@ export default (() => {
 				cursor="help"
 				hover-letter-spacing=".5 px"
 				hover-font="italic 300 14px/180% &quot;Public Sans&quot;, sans-serif"
+				md-font="italic 100 12px/180% &quot;Public Sans&quot;, sans-serif"
+				sm-width="auto"
+				sm-hover-font="italic 300 10px/180% &quot;Public Sans&quot;, sans-serif"
+				md-width="auto"
+				md-hover-font="300 12px --fontFamily-googlePublicSans"
+				md-hover-letter-spacing=".5px"
+				md-letter-spacing="0.5px"
 			>
 				View all  →{" "}
 			</Button>
@@ -430,6 +534,9 @@ export default (() => {
 				align-self="center"
 				text-align="center"
 				font="200 16px &quot;Public Sans&quot;, sans-serif"
+				sm-font="200 12px &quot;Public Sans&quot;, sans-serif"
+				sm-margin="16px 0px 16px 0px"
+				md-font="200 14px &quot;Public Sans&quot;, sans-serif"
 			>
 				My Wing (2011)
 			</Text>
@@ -440,6 +547,9 @@ export default (() => {
 				align-self="center"
 				text-align="center"
 				font="200 16px &quot;Public Sans&quot;, sans-serif"
+				sm-font="200 12px &quot;Public Sans&quot;, sans-serif"
+				sm-margin="16px 0px 16px 0px"
+				md-font="200 14px &quot;Public Sans&quot;, sans-serif"
 			>
 				Too Good (2021)
 			</Text>
@@ -450,6 +560,9 @@ export default (() => {
 				align-self="center"
 				text-align="center"
 				font="200 16px &quot;Public Sans&quot;, sans-serif"
+				sm-font="200 12px &quot;Public Sans&quot;, sans-serif"
+				sm-margin="16px 0px 16px 0px"
+				md-font="200 14px &quot;Public Sans&quot;, sans-serif"
 			>
 				Tomorrow (2010)
 			</Text>
@@ -460,6 +573,9 @@ export default (() => {
 				align-self="center"
 				text-align="center"
 				font="200 16px &quot;Public Sans&quot;, sans-serif"
+				sm-font="200 12px &quot;Public Sans&quot;, sans-serif"
+				sm-margin="16px 0px 16px 0px"
+				md-font="200 14px &quot;Public Sans&quot;, sans-serif"
 			>
 				12월 24일 (2020)
 			</Text>
@@ -474,38 +590,35 @@ export default (() => {
 				<Image width="64px" height="64px" src="https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/ZCL-white.svg?v=2021-11-20T16:12:54.507Z" margin="auto auto auto auto" />
 			</Box>
 			<Box grid-column="4" grid-row="1" padding="10px 10px 10px 10px" background="none">
-				<Text>
+				<Text md-font="14px &quot;Public Sans&quot;, sans-serif">
 					Acknowledgements
 				</Text>
-				<Text color="rgba(225, 230, 223, 0.7)" font="300 14px &quot;Public Sans&quot;, sans-serif">
-					smtown-nctzens for info
-				</Text>
-				<Text color="rgba(225, 230, 223, 0.7)" font="300 14px &quot;Public Sans&quot;, sans-serif">
-					FY!NCT for images
+				<Text font="300 14px &quot;Public Sans&quot;, sans-serif" md-font="300 12px &quot;Public Sans&quot;, sans-serif" color="rgba(214, 214, 214, 0.7)">
+					Please click here for a full list of credits for this project.
 				</Text>
 			</Box>
 			<Box grid-column="3" grid-row="1" padding="10px 10px 10px 10px" background="none">
-				<Text>
+				<Text md-font="14px &quot;Public Sans&quot;, sans-serif">
 					Navigation
 				</Text>
-				<Text color="rgba(225, 230, 223, 0.7)" font="300 14px &quot;Public Sans&quot;, sans-serif">
+				<Text font="300 14px &quot;Public Sans&quot;, sans-serif" md-font="300 12px &quot;Public Sans&quot;, sans-serif" color="rgba(214, 214, 214, 0.7)">
 					Home
 				</Text>
-				<Text color="rgba(225, 230, 223, 0.7)" font="300 14px &quot;Public Sans&quot;, sans-serif">
+				<Text font="300 14px &quot;Public Sans&quot;, sans-serif" md-font="300 12px &quot;Public Sans&quot;, sans-serif" color="rgba(214, 214, 214, 0.7)">
 					Profile
 				</Text>
-				<Text color="rgba(225, 230, 223, 0.7)" font="300 14px &quot;Public Sans&quot;, sans-serif">
+				<Text font="300 14px &quot;Public Sans&quot;, sans-serif" md-font="300 12px &quot;Public Sans&quot;, sans-serif" color="rgba(214, 214, 214, 0.7)">
 					Philosophy
 				</Text>
-				<Text color="rgba(225, 230, 223, 0.7)" font="300 14px &quot;Public Sans&quot;, sans-serif">
-					Works
+				<Text font="300 14px &quot;Public Sans&quot;, sans-serif" md-font="300 12px &quot;Public Sans&quot;, sans-serif" color="rgba(214, 214, 214, 0.7)">
+					Projects
 				</Text>
 			</Box>
 			<Box grid-column="2" grid-row="1" padding="10px 10px 10px 10px" background="none">
-				<Text>
+				<Text md-font="14px &quot;Public Sans&quot;, sans-serif">
 					Project
 				</Text>
-				<Text color="rgba(225, 230, 223, 0.7)" font="300 14px &quot;Public Sans&quot;, sans-serif">
+				<Text font="200 14px &quot;Public Sans&quot;, sans-serif" color="rgba(214, 214, 214, 0.7)">
 					<Span
 						overflow-wrap="normal"
 						word-break="normal"
@@ -513,6 +626,7 @@ export default (() => {
 						text-indent="0"
 						text-overflow="clip"
 						hyphens="manual"
+						md-font="300 12px &quot;Public Sans&quot;, sans-serif"
 					>
 						© Jairah  |  Website Design, Copy, and Visual Design
 						<br />
@@ -525,6 +639,7 @@ export default (() => {
 				</Text>
 			</Box>
 		</Section>
+		<Components.QuarklycommunityKitBackToTop showAfter="1920px" showAlways />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
@@ -552,13 +667,16 @@ export default (() => {
 				{":root {\n  box-sizing: border-box;\n}\n\n* {\n  box-sizing: inherit;\n}"}
 			</style>
 			<style place={"endOfHead"} rawKey={"6199247c77612864da8169bc"}>
-				{"@font-face {\n    font-family: 'Abygaer';\n    src: url('https://raw.githubusercontent.com/jairahdev/zcl/blob/main/Abygaer%20Regular.otf');\n} "}
+				{"@font-face {\n    font-family: 'Abygaer';\n    src: url('https://zhongchenle.netlify.app/fonts/Abygaer-Regular.otf');\n} "}
 			</style>
 			<style place={"endOfBody"} rawKey={"6199386aadedc8ee83d08291"}>
 				{"::selection {\n  color: #151515;\n  background-color: #c58d2d;\n}"}
 			</style>
 			<style place={"endOfHead"} rawKey={"619a25be4a02fb51028f13bf"}>
 				{"img { \n  -webkit-user-drag: none; \n  -khtml-user-drag: none; \n  -moz-user-drag: none; \n  -o-user-drag: none; \n  user-drag: none; \n}"}
+			</style>
+			<style place={"endOfHead"} rawKey={"619b330bb29696ccb45e780e"}>
+				{"/* width */\n::-webkit-scrollbar {\n  width: 5px;\n}\n\n/* Track */\n::-webkit-scrollbar-track {\n  background: #151515; \n}\n \n/* Handle */\n::-webkit-scrollbar-thumb {\n  background:rgb(225,230,223); \n}\n\n/* Handle on hover */\n::-webkit-scrollbar-thumb:hover {\n  background: #c58d2d; \n}\n\n/* box scroll */\nli::-webkit-scrollbar {\n  width: 5px;}\nli::-webkit-scrollbar-track {\n  background: #151515;}\nli::-webkit-scrollbar-thumb {\n  background:#151515;}\nli::-webkit-scrollbar-thumb:hover {\n  background: #151515;}"}
 			</style>
 		</RawHtml>
 	</Theme>;
