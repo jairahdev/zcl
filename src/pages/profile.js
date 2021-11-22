@@ -25,6 +25,7 @@ export default (() => {
 			grid-auto-rows="120px 50px 50px 50px 50px 50px"
 			height="100%"
 			min-height="80vh"
+			md-grid-template-rows="120px 25px  25px  25px  25px  25px"
 		>
 			<Image
 				src="https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/PROFILE_1.png?v=2021-11-21T16:34:36.275Z"
@@ -34,6 +35,7 @@ export default (() => {
 				width="70%"
 				justify-self="center"
 				align-self="start"
+				sm-margin="auto auto auto auto"
 			/>
 			<Text
 				grid-column="4 / span 2"
@@ -42,6 +44,8 @@ export default (() => {
 				align-self="center"
 				grid-row="1"
 				justify-self="start"
+				lg-font="42px --fontFamily-googlePlayfairDisplay"
+				sm-margin="16px 0px 16px 0px"
 			>
 				Zhong Chenle
 			</Text>
@@ -53,6 +57,8 @@ export default (() => {
 				justify-self="start"
 				color="rgba(214, 214, 214)"
 				margin="8px 0px 8px 0px"
+				lg-font="200 12px --fontFamily-googlePublicSans"
+				sm-font="200 10px --fontFamily-googlePublicSans"
 			>
 				Beijing Contemporary Music Academy{"\n\n"}
 			</Text>
@@ -64,6 +70,8 @@ export default (() => {
 				justify-self="start"
 				color="rgba(214, 214, 214)"
 				margin="8px 0px 8px 0px"
+				lg-font="200 12px --fontFamily-googlePublicSans"
+				sm-font="200 10px --fontFamily-googlePublicSans"
 			>
 				INFP
 			</Text>
@@ -75,6 +83,8 @@ export default (() => {
 				justify-self="start"
 				color="rgba(214, 214, 214)"
 				margin="8px 0px 8px 0px"
+				lg-font="200 12px --fontFamily-googlePublicSans"
+				sm-font="200 10px --fontFamily-googlePublicSans"
 			>
 				0
 			</Text>
@@ -86,6 +96,8 @@ export default (() => {
 				justify-self="start"
 				color="rgba(214, 214, 214)"
 				margin="8px 0px 8px 0px"
+				lg-font="200 12px --fontFamily-googlePublicSans"
+				sm-font="200 10px --fontFamily-googlePublicSans"
 			>
 				November 22, 2001
 			</Text>
@@ -97,6 +109,8 @@ export default (() => {
 				justify-self="start"
 				color="rgba(214, 214, 214)"
 				margin="8px 0px 8px 0px"
+				lg-font="200 12px --fontFamily-googlePublicSans"
+				sm-font="200 10px --fontFamily-googlePublicSans"
 			>
 				Shanghai, China
 			</Text>
@@ -108,6 +122,8 @@ export default (() => {
 				justify-self="start"
 				color="rgba(214, 214, 214)"
 				margin="8px 0px 8px 0px"
+				lg-font="200 12px --fontFamily-googlePublicSans"
+				sm-font="200 10px --fontFamily-googlePublicSans"
 			>
 				Zhong Chenle / 
 钟辰乐{"\n\n"}
@@ -119,6 +135,8 @@ export default (() => {
 				align-self="start"
 				justify-self="start"
 				margin="8px 0px 8px 0px"
+				lg-font="300 12px --fontFamily-googlePublicSans"
+				sm-font="300 10px --fontFamily-googlePublicSans"
 			>
 				Education
 			</Text>
@@ -129,6 +147,8 @@ export default (() => {
 				align-self="start"
 				justify-self="start"
 				margin="8px 0px 8px 0px"
+				lg-font="300 12px --fontFamily-googlePublicSans"
+				sm-font="300 10px --fontFamily-googlePublicSans"
 			>
 				MBTI
 			</Text>
@@ -139,6 +159,8 @@ export default (() => {
 				align-self="start"
 				justify-self="start"
 				margin="8px 0px 8px 0px"
+				lg-font="300 12px --fontFamily-googlePublicSans"
+				sm-font="300 10px --fontFamily-googlePublicSans"
 			>
 				Blood Type
 			</Text>
@@ -149,6 +171,8 @@ export default (() => {
 				align-self="start"
 				justify-self="start"
 				margin="8px 0px 8px 0px"
+				lg-font="300 12px --fontFamily-googlePublicSans"
+				sm-font="300 10px --fontFamily-googlePublicSans"
 			>
 				Birthdate
 			</Text>
@@ -159,6 +183,8 @@ export default (() => {
 				align-self="start"
 				justify-self="start"
 				margin="8px 0px 8px 0px"
+				lg-font="300 12px --fontFamily-googlePublicSans"
+				sm-font="300 10px --fontFamily-googlePublicSans"
 			>
 				Birthplace
 			</Text>
@@ -169,6 +195,8 @@ export default (() => {
 				align-self="start"
 				justify-self="start"
 				margin="8px 0px 8px 0px"
+				lg-font="300 12px --fontFamily-googlePublicSans"
+				sm-font="300 10px --fontFamily-googlePublicSans"
 			>
 				Birthname
 			</Text>
@@ -180,6 +208,7 @@ export default (() => {
 			grid-auto-rows="120px 50px 50px 50px 50px 50px"
 			height="100%"
 			min-height="80vh"
+			md-grid-template-rows="120px  25px 25px 25px 25px 25px"
 		>
 			<Image
 				src="https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/PROFILE_2.png?v=2021-11-22T11:52:05.851Z"
@@ -197,6 +226,7 @@ export default (() => {
 				align-self="center"
 				grid-row="1"
 				justify-self="start"
+				lg-font="42px --fontFamily-googlePlayfairDisplay"
 			>
 				Chenle in NCT
 			</Text>
@@ -208,6 +238,7 @@ export default (() => {
 				justify-self="start"
 				color="rgba(214, 214, 214)"
 				margin="8px 0px 8px 0px"
+				lg-font="200 12px --fontFamily-googlePublicSans"
 			>
 				<Link
 					href="https://www.weibo.com/u/7403383160"
@@ -215,6 +246,7 @@ export default (() => {
 					color="rgba(214, 214, 214)"
 					text-decoration-line="initial"
 					cursor="alias"
+					lg-font="200 12px --fontFamily-googlePublicSans"
 				>
 					KHCHENLE
 				</Link>
@@ -227,6 +259,7 @@ export default (() => {
 				justify-self="start"
 				color="rgba(214, 214, 214)"
 				margin="8px 0px 8px 0px"
+				lg-font="200 12px --fontFamily-googlePublicSans"
 			>
 				Main Vocal
 			</Text>
@@ -238,6 +271,7 @@ export default (() => {
 				justify-self="start"
 				color="rgba(214, 214, 214)"
 				margin="8px 0px 8px 0px"
+				lg-font="200 12px --fontFamily-googlePublicSans"
 			>
 				October 12, 2020
 			</Text>
@@ -249,6 +283,7 @@ export default (() => {
 				justify-self="start"
 				color="rgba(214, 214, 214)"
 				margin="8px 0px 8px 0px"
+				lg-font="200 12px --fontFamily-googlePublicSans"
 			>
 				August 25, 2016
 			</Text>
@@ -260,6 +295,7 @@ export default (() => {
 				justify-self="start"
 				color="rgba(214, 214, 214)"
 				margin="8px 0px 8px 0px"
+				lg-font="200 12px --fontFamily-googlePublicSans"
 			>
 				January 1, 2010
 			</Text>
@@ -271,6 +307,7 @@ export default (() => {
 				justify-self="start"
 				color="rgba(214, 214, 214)"
 				margin="8px 0px 8px 0px"
+				lg-font="200 12px --fontFamily-googlePublicSans"
 			>
 				NCT Dream
 				<br />
@@ -283,6 +320,7 @@ export default (() => {
 				align-self="start"
 				justify-self="start"
 				margin="8px 0px 8px 0px"
+				lg-font="300 12px --fontFamily-googlePublicSans"
 			>
 				Weibo
 			</Text>
@@ -293,6 +331,7 @@ export default (() => {
 				align-self="start"
 				justify-self="start"
 				margin="8px 0px 8px 0px"
+				lg-font="300 12px --fontFamily-googlePublicSans"
 			>
 				Position
 			</Text>
@@ -303,6 +342,7 @@ export default (() => {
 				align-self="start"
 				justify-self="start"
 				margin="8px 0px 8px 0px"
+				lg-font="300 12px --fontFamily-googlePublicSans"
 			>
 				NCT U Debut
 			</Text>
@@ -313,6 +353,7 @@ export default (() => {
 				align-self="start"
 				justify-self="start"
 				margin="8px 0px 8px 0px"
+				lg-font="300 12px --fontFamily-googlePublicSans"
 			>
 				NCT Dream Debut
 			</Text>
@@ -323,6 +364,7 @@ export default (() => {
 				align-self="start"
 				justify-self="start"
 				margin="8px 0px 8px 0px"
+				lg-font="300 12px --fontFamily-googlePublicSans"
 			>
 				Solo Debut
 			</Text>
@@ -333,15 +375,16 @@ export default (() => {
 				align-self="start"
 				justify-self="start"
 				margin="8px 0px 8px 0px"
+				lg-font="300 12px --fontFamily-googlePublicSans"
 			>
 				Units
 			</Text>
 		</Box>
 		<Components.QuarklycommunityKitTimeline color="#ececec" font="200 1em --fontFamily-googlePublicSans" padding="0px 10% 0px 10%" margin="50px 0px 50px 0px">
 			<Override slot="Item" color="#ffffff" font="200 1em --fontFamily-googlePublicSans" />
-			<Override slot="Title" color="#ffffff" font="200 24px --fontFamily-googlePublicSans" />
+			<Override slot="Title" color="#ffffff" font="200 24px --fontFamily-googlePublicSans" lg-font="200 18px --fontFamily-googlePublicSans" />
 			<Override slot="Dates" color="#c58d2d" font="200 1em --fontFamily-googlePublicSans" />
-			<Override slot="Descr" color="rgba(214, 214, 214)" font="100 14px/180% --fontFamily-googlePublicSans" />
+			<Override slot="Descr" color="rgba(214, 214, 214)" font="100 14px/180% --fontFamily-googlePublicSans" lg-font="100 12px/180% --fontFamily-googlePublicSans" />
 			<Override slot="Point" color="#c58d2d" font="200 1em --fontFamily-googlePublicSans" />
 			<Override slot="Line" color="#ffffff" background="#ffffff" font="200 1em --fontFamily-googlePublicSans" />
 			<Override slot="Dates 0">
@@ -455,7 +498,8 @@ In February,  Chenle was featured on IMLAY's song "Too Good", from his 4th EP "
 				·   Chenle was born in Shanghai, China on 22 November 2001.{"\n\n"}
 			</Override>
 		</Components.QuarklycommunityKitTimeline>
-		<Components.Foot />
+		<Components.FinalFooter />
+		<Components.QuarklycommunityKitBackToTop showAfter="1920px" />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
@@ -492,7 +536,7 @@ In February,  Chenle was featured on IMLAY's song "Too Good", from his 4th EP "
 				{"img { \n  -webkit-user-drag: none; \n  -khtml-user-drag: none; \n  -moz-user-drag: none; \n  -o-user-drag: none; \n  user-drag: none; \n}"}
 			</style>
 			<style place={"endOfHead"} rawKey={"619b330bb29696ccb45e780e"}>
-				{"/* width */\n::-webkit-scrollbar {\n  width: 5px;\n}\n\n/* Track */\n::-webkit-scrollbar-track {\n  background: #151515; \n}\n \n/* Handle */\n::-webkit-scrollbar-thumb {\n  background:rgb(225,230,223); \n}\n\n/* Handle on hover */\n::-webkit-scrollbar-thumb:hover {\n  background: #c58d2d; \n}\n\n/* box scroll */\nli::-webkit-scrollbar {\n  width: 5px;}\nli::-webkit-scrollbar-track {\n  background: #151515;}\nli::-webkit-scrollbar-thumb {\n  background:#151515;}\nli::-webkit-scrollbar-thumb:hover {\n  background: #151515;}"}
+				{"/* width */\n::-webkit-scrollbar {\n  width: 5px;\n}\n\n/* Track */\n::-webkit-scrollbar-track {\n  background: #151515; \n}\n \n/* Handle */\n::-webkit-scrollbar-thumb {\n  background:rgb(225,230,223); \n}\n\n/* Handle on hover */\n::-webkit-scrollbar-thumb:hover {\n  background: #c58d2d; \n}\n\n\n\n/* box scroll */\nli::-webkit-scrollbar {\n  width: 5px;}\nli::-webkit-scrollbar-track {\n  background: #151515;}\nli::-webkit-scrollbar-thumb {\n  background:#151515;}\nli::-webkit-scrollbar-thumb:hover {\n  background: #151515;}"}
 			</style>
 		</RawHtml>
 	</Theme>;

@@ -23,6 +23,7 @@ export default (() => {
 			grid-template-rows="repeat(24,1fr)"
 			min-height="100vh"
 			height="100vh"
+			lg-font="12px &quot;Public Sans&quot;, sans-serif"
 		>
 			<Box
 				display="grid"
@@ -37,6 +38,9 @@ export default (() => {
 					font="64px --fontFamily-googlePlayfairDisplay"
 					color="#c58d2d "
 					align-self="end"
+					lg-font="54px --fontFamily-googlePlayfairDisplay"
+					md-font="32px --fontFamily-googlePlayfairDisplay"
+					sm-font="24px --fontFamily-googlePlayfairDisplay"
 				>
 					Discography
 				</Text>
@@ -47,6 +51,7 @@ export default (() => {
 					color="rgba(214, 214, 214, 0.7)"
 					align-self="end"
 					justify-self="end"
+					sm-font="200 8px --fontFamily-googlePublicSans"
 				>
 					Solo Albums, Singles, Official Covers and Featurings
 				</Text>
@@ -71,6 +76,7 @@ export default (() => {
 					grid-template-rows="1fr"
 					grid-gap="15px"
 					justify-content="center"
+					lg-font="12px &quot;Public Sans&quot;, sans-serif"
 				>
 					<Icon category="fi" icon={FiLink2} width="12px" height="12px" />
 					<Text
@@ -88,6 +94,7 @@ export default (() => {
 							text-decoration-line="initial"
 							cursor="alias"
 							visited-border-color="rgba(225, 230, 223, 0.5)"
+							lg-font="200 12px &quot;Public Sans&quot;, sans-serif"
 						>
 							Tomorrow (2010)
 						</Link>
@@ -105,6 +112,7 @@ export default (() => {
 					grid-template-rows="1fr"
 					grid-gap="15px"
 					justify-content="center"
+					lg-font="12px &quot;Public Sans&quot;, sans-serif"
 				>
 					<Icon category="fi" icon={FiLink2} width="12px" height="12px" />
 					<Text
@@ -122,6 +130,7 @@ export default (() => {
 							text-decoration-line="initial"
 							cursor="alias"
 							visited-border-color="rgba(225, 230, 223, 0.5)"
+							lg-font="200 12px &quot;Public Sans&quot;, sans-serif"
 						>
 							My Wing (2011)
 						</Link>
@@ -140,6 +149,7 @@ export default (() => {
 					grid-gap="15px"
 					justify-content="center"
 					color="#efefef"
+					lg-font="12px &quot;Public Sans&quot;, sans-serif"
 				>
 					<Text
 						grid-row="3"
@@ -147,6 +157,7 @@ export default (() => {
 						align-self="center"
 						justify-self="center"
 						font="200 14px &quot;Public Sans&quot;, sans-serif"
+						lg-font="200 12px &quot;Public Sans&quot;, sans-serif"
 					>
 						You Are There (2014)
 					</Text>
@@ -170,6 +181,7 @@ export default (() => {
 					grid-template-rows="1fr"
 					grid-gap="15px"
 					justify-content="center"
+					lg-font="12px &quot;Public Sans&quot;, sans-serif"
 				>
 					<Icon category="fi" icon={FiLink2} width="12px" height="12px" />
 					<Text
@@ -187,6 +199,7 @@ export default (() => {
 							text-decoration-line="initial"
 							cursor="alias"
 							visited-border-color="rgba(225, 230, 223, 0.5)"
+							lg-font="200 12px &quot;Public Sans&quot;, sans-serif"
 						>
 							Free Love (2021)
 						</Link>
@@ -204,6 +217,7 @@ export default (() => {
 					grid-template-rows="1fr"
 					grid-gap="15px"
 					justify-content="center"
+					lg-font="12px &quot;Public Sans&quot;, sans-serif"
 				>
 					<Icon category="fi" icon={FiLink2} width="12px" height="12px" />
 					<Text
@@ -221,6 +235,7 @@ export default (() => {
 							text-decoration-line="initial"
 							cursor="alias"
 							visited-border-color="rgba(225, 230, 223, 0.5)"
+							lg-font="200 12px &quot;Public Sans&quot;, sans-serif"
 						>
 							Too Good (2021)
 						</Link>
@@ -238,6 +253,7 @@ export default (() => {
 					grid-template-rows="1fr"
 					grid-gap="15px"
 					justify-content="center"
+					lg-font="12px &quot;Public Sans&quot;, sans-serif"
 				>
 					<Icon category="fi" icon={FiMusic} width="12px" height="12px" />
 					<Text
@@ -246,6 +262,7 @@ export default (() => {
 						align-self="center"
 						justify-self="center"
 						font="200 14px &quot;Public Sans&quot;, sans-serif"
+						lg-font="200 12px &quot;Public Sans&quot;, sans-serif"
 					>
 						Singles
 					</Text>
@@ -262,6 +279,7 @@ export default (() => {
 					grid-template-rows="1fr"
 					grid-gap="15px"
 					justify-content="center"
+					lg-font="12px &quot;Public Sans&quot;, sans-serif"
 				>
 					<Icon category="fi" icon={FiLink2} width="12px" height="12px" />
 					<Text
@@ -279,6 +297,7 @@ export default (() => {
 							text-decoration-line="initial"
 							cursor="alias"
 							visited-border-color="rgba(225, 230, 223, 0.5)"
+							lg-font="200 12px &quot;Public Sans&quot;, sans-serif"
 						>
 							{" "}12월 24일
 
@@ -307,35 +326,36 @@ export default (() => {
 					grid-row="4"
 					grid-column="4"
 					overflow-y="scroll"
+					overflow-x="hidden"
 				>
-					<Text>
+					<Text lg-font="200 12px &quot;Public Sans&quot;, sans-serif">
 						Yellow Maple Leaves (2011)
 					</Text>
-					<Text>
+					<Text lg-font="200 12px &quot;Public Sans&quot;, sans-serif">
 						Strong Children (2012)
 					</Text>
-					<Text>
+					<Text lg-font="200 12px &quot;Public Sans&quot;, sans-serif">
 						Do Not Be Afraid (2012)
 					</Text>
-					<Text>
+					<Text lg-font="200 12px &quot;Public Sans&quot;, sans-serif">
 						Amazing Grace (2012)
 					</Text>
-					<Text>
+					<Text lg-font="200 12px &quot;Public Sans&quot;, sans-serif">
 						An Angel (2012)
 					</Text>
-					<Text>
+					<Text lg-font="200 12px &quot;Public Sans&quot;, sans-serif">
 						Childhood Companion (2012)
 					</Text>
-					<Text>
+					<Text lg-font="200 12px &quot;Public Sans&quot;, sans-serif">
 						Travel The Wind (2012)
 					</Text>
-					<Text>
+					<Text lg-font="200 12px &quot;Public Sans&quot;, sans-serif">
 						Ben (2012)
 					</Text>
-					<Text>
+					<Text lg-font="200 12px &quot;Public Sans&quot;, sans-serif">
 						Can You Feel The Love Tonight (2012)
 					</Text>
-					<Text>
+					<Text lg-font="200 12px &quot;Public Sans&quot;, sans-serif">
 						龙月情缘 (The Dragon's Romance) (2014)
 					</Text>
 				</List>
@@ -351,6 +371,7 @@ export default (() => {
 					grid-template-rows="1fr"
 					grid-gap="15px"
 					justify-content="center"
+					lg-font="12px &quot;Public Sans&quot;, sans-serif"
 				>
 					<Icon category="fi" icon={FiLink2} width="12px" height="12px" />
 					<Text
@@ -368,6 +389,7 @@ export default (() => {
 							text-decoration-line="initial"
 							cursor="alias"
 							visited-border-color="rgba(225, 230, 223, 0.5)"
+							lg-font="200 12px &quot;Public Sans&quot;, sans-serif"
 						>
 							A New Beginning (2020)
 						</Link>
@@ -419,6 +441,9 @@ export default (() => {
 					font="64px --fontFamily-googlePlayfairDisplay"
 					color="#c58d2d "
 					align-self="end"
+					lg-font="54px --fontFamily-googlePlayfairDisplay"
+					md-font="32px --fontFamily-googlePlayfairDisplay"
+					sm-font="24px --fontFamily-googlePlayfairDisplay"
 				>
 					Filmography
 				</Text>
@@ -429,6 +454,7 @@ export default (() => {
 					color="rgba(214, 214, 214, 0.7)"
 					align-self="end"
 					justify-self="end"
+					sm-font="200 8px --fontFamily-googlePublicSans"
 				>
 					Appearances in film, television series, and various variety shows.
 				</Text>
@@ -467,6 +493,7 @@ export default (() => {
 						text-align="center"
 						width="100% "
 						margin="5px 0px 5px 0px"
+						lg-font="200 12px --fontFamily-googlePublicSans"
 					>
 						Super Voice
 					</Text>
@@ -479,6 +506,7 @@ export default (() => {
 						text-align="center"
 						width="100% "
 						margin="5px 0px 5px 0px"
+						lg-font="200 12px --fontFamily-googlePublicSans"
 					>
 						超级童声{"\t"}
 					</Text>
@@ -492,6 +520,7 @@ export default (() => {
 						width="100%"
 						margin="5px 0px 5px 0px"
 						color="rgba(225, 230, 223, 0.7)"
+						lg-font="200 12px --fontFamily-googlePublicSans"
 					>
 						2013{"\n\n"}
 					</Text>
@@ -505,6 +534,7 @@ export default (() => {
 						width="100%"
 						margin="5px 0px 5px 0px"
 						color="rgba(225, 230, 223, 0.7)"
+						lg-font="200 12px --fontFamily-googlePublicSans"
 					>
 						Variety
 						<br />
@@ -537,6 +567,7 @@ export default (() => {
 						text-align="center"
 						width="100% "
 						margin="5px 0px 5px 0px"
+						lg-font="200 12px --fontFamily-googlePublicSans"
 					>
 						China's Got Talent
 					</Text>
@@ -549,6 +580,7 @@ export default (() => {
 						text-align="center"
 						width="100% "
 						margin="5px 0px 5px 0px"
+						lg-font="200 12px --fontFamily-googlePublicSans"
 					>
 						中国达人秀{"\t"}
 					</Text>
@@ -562,6 +594,7 @@ export default (() => {
 						width="100%"
 						margin="5px 0px 5px 0px"
 						color="rgba(225, 230, 223, 0.7)"
+						lg-font="200 12px --fontFamily-googlePublicSans"
 					>
 						2010{"\n\n"}
 					</Text>
@@ -575,6 +608,7 @@ export default (() => {
 						width="100%"
 						margin="5px 0px 5px 0px"
 						color="rgba(225, 230, 223, 0.7)"
+						lg-font="200 12px --fontFamily-googlePublicSans"
 					>
 						Variety
 						<br />
@@ -607,6 +641,7 @@ export default (() => {
 						text-align="center"
 						width="100% "
 						margin="5px 0px 5px 0px"
+						lg-font="200 12px --fontFamily-googlePublicSans"
 					>
 						Bund Police{"\t"}
 					</Text>
@@ -619,6 +654,7 @@ export default (() => {
 						text-align="center"
 						width="100% "
 						margin="5px 0px 5px 0px"
+						lg-font="200 12px --fontFamily-googlePublicSans"
 					>
 						外滩警事
 						<br />
@@ -634,6 +670,7 @@ export default (() => {
 						width="100%"
 						margin="5px 0px 5px 0px"
 						color="rgba(225, 230, 223, 0.7)"
+						lg-font="200 12px --fontFamily-googlePublicSans"
 					>
 						2013{"\n\n"}
 					</Text>
@@ -647,6 +684,7 @@ export default (() => {
 						width="100%"
 						margin="5px 0px 5px 0px"
 						color="rgba(225, 230, 223, 0.7)"
+						lg-font="200 12px --fontFamily-googlePublicSans"
 					>
 						Series
 						<br />
@@ -679,6 +717,7 @@ export default (() => {
 						text-align="center"
 						width="100% "
 						margin="5px 0px 5px 0px"
+						lg-font="200 12px --fontFamily-googlePublicSans"
 					>
 						The Queen of SOP 2
 					</Text>
@@ -691,6 +730,7 @@ export default (() => {
 						text-align="center"
 						width="100% "
 						margin="5px 0px 5px 0px"
+						lg-font="200 12px --fontFamily-googlePublicSans"
 					>
 						勝女的代價2
 					</Text>
@@ -704,6 +744,7 @@ export default (() => {
 						width="100%"
 						margin="5px 0px 5px 0px"
 						color="rgba(225, 230, 223, 0.7)"
+						lg-font="200 12px --fontFamily-googlePublicSans"
 					>
 						2013
 					</Text>
@@ -717,6 +758,7 @@ export default (() => {
 						width="100%"
 						margin="5px 0px 5px 0px"
 						color="rgba(225, 230, 223, 0.7)"
+						lg-font="200 12px --fontFamily-googlePublicSans"
 					>
 						Series
 						<br />
@@ -749,6 +791,7 @@ export default (() => {
 						text-align="center"
 						width="100% "
 						margin="5px 0px 5px 0px"
+						lg-font="200 12px --fontFamily-googlePublicSans"
 					>
 						A Candy for Mother
 					</Text>
@@ -761,6 +804,7 @@ export default (() => {
 						text-align="center"
 						width="100% "
 						margin="5px 0px 5px 0px"
+						lg-font="200 12px --fontFamily-googlePublicSans"
 					>
 						掌心的糖果
 						<br />
@@ -776,6 +820,7 @@ export default (() => {
 						width="100%"
 						margin="5px 0px 5px 0px"
 						color="rgba(225, 230, 223, 0.7)"
+						lg-font="200 12px --fontFamily-googlePublicSans"
 					>
 						2014{"\n\n"}
 					</Text>
@@ -789,6 +834,7 @@ export default (() => {
 						width="100%"
 						margin="5px 0px 5px 0px"
 						color="rgba(225, 230, 223, 0.7)"
+						lg-font="200 12px --fontFamily-googlePublicSans"
 					>
 						Film
 						<br />
@@ -821,6 +867,7 @@ export default (() => {
 						text-align="center"
 						width="100% "
 						margin="5px 0px 5px 0px"
+						lg-font="200 12px --fontFamily-googlePublicSans"
 					>
 						Soul Rhythm
 						<br />
@@ -835,6 +882,7 @@ export default (() => {
 						text-align="center"
 						width="100% "
 						margin="5px 0px 5px 0px"
+						lg-font="200 12px --fontFamily-googlePublicSans"
 					>
 						靈魂的節奏
 						<br />
@@ -850,6 +898,7 @@ export default (() => {
 						width="100%"
 						margin="5px 0px 5px 0px"
 						color="rgba(225, 230, 223, 0.7)"
+						lg-font="200 12px --fontFamily-googlePublicSans"
 					>
 						2013{"\n\n"}
 					</Text>
@@ -863,6 +912,7 @@ export default (() => {
 						width="100%"
 						margin="5px 0px 5px 0px"
 						color="rgba(225, 230, 223, 0.7)"
+						lg-font="200 12px --fontFamily-googlePublicSans"
 					>
 						Film
 						<br />
@@ -891,6 +941,7 @@ export default (() => {
 						align-self="center"
 						justify-self="center"
 						font="200 14px &quot;Public Sans&quot;, sans-serif"
+						lg-font="200 12px --fontFamily-googlePublicSans"
 					>
 						Variety Show Performances
 					</Text>
@@ -916,6 +967,7 @@ export default (() => {
 					grid-column="3 / span 2"
 					overflow-y="scroll"
 					padding="0px 0px 0px 0px"
+					lg-font="200 12px --fontFamily-googlePublicSans"
 				>
 					<Text margin="8p 0px 16px 0px">
 						2010 · Sunday My Biggest
@@ -1005,6 +1057,9 @@ export default (() => {
 					font="64px --fontFamily-googlePlayfairDisplay"
 					color="#c58d2d "
 					align-self="end"
+					lg-font="54px --fontFamily-googlePlayfairDisplay"
+					md-font="32px --fontFamily-googlePlayfairDisplay"
+					sm-font="24px --fontFamily-googlePlayfairDisplay"
 				>
 					Radio Shows
 				</Text>
@@ -1015,6 +1070,7 @@ export default (() => {
 					color="rgba(214, 214, 214, 0.7)"
 					align-self="end"
 					justify-self="end"
+					sm-font="200 8px --fontFamily-googlePublicSans"
 				>
 					RADIO DJ
 				</Text>
@@ -1084,7 +1140,8 @@ export default (() => {
 				</Box>
 			</Box>
 		</Box>
-		<Components.Foot />
+		<Components.FinalFooter />
+		<Components.QuarklycommunityKitBackToTop showAfter="1920px" />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
@@ -1121,7 +1178,7 @@ export default (() => {
 				{"img { \n  -webkit-user-drag: none; \n  -khtml-user-drag: none; \n  -moz-user-drag: none; \n  -o-user-drag: none; \n  user-drag: none; \n}"}
 			</style>
 			<style place={"endOfHead"} rawKey={"619b330bb29696ccb45e780e"}>
-				{"/* width */\n::-webkit-scrollbar {\n  width: 5px;\n}\n\n/* Track */\n::-webkit-scrollbar-track {\n  background: #151515; \n}\n \n/* Handle */\n::-webkit-scrollbar-thumb {\n  background:rgb(225,230,223); \n}\n\n/* Handle on hover */\n::-webkit-scrollbar-thumb:hover {\n  background: #c58d2d; \n}\n\n/* box scroll */\nli::-webkit-scrollbar {\n  width: 5px;}\nli::-webkit-scrollbar-track {\n  background: #151515;}\nli::-webkit-scrollbar-thumb {\n  background:#151515;}\nli::-webkit-scrollbar-thumb:hover {\n  background: #151515;}"}
+				{"/* width */\n::-webkit-scrollbar {\n  width: 5px;\n}\n\n/* Track */\n::-webkit-scrollbar-track {\n  background: #151515; \n}\n \n/* Handle */\n::-webkit-scrollbar-thumb {\n  background:rgb(225,230,223); \n}\n\n/* Handle on hover */\n::-webkit-scrollbar-thumb:hover {\n  background: #c58d2d; \n}\n\n\n\n/* box scroll */\nli::-webkit-scrollbar {\n  width: 5px;}\nli::-webkit-scrollbar-track {\n  background: #151515;}\nli::-webkit-scrollbar-thumb {\n  background:#151515;}\nli::-webkit-scrollbar-thumb:hover {\n  background: #151515;}"}
 			</style>
 		</RawHtml>
 	</Theme>;

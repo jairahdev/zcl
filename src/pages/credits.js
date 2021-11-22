@@ -23,6 +23,8 @@ export default (() => {
 			width="100%"
 			min-width="100vh"
 			padding="10% 30% 0px 30%"
+			md-height="100%"
+			lg-height="100%"
 		>
 			<Text font="32px &quot;Public Sans&quot;, sans-serif" color="#c58d2d ">
 				Acknowledgements
@@ -228,8 +230,11 @@ export default (() => {
 			<Text font="200 16px &quot;Public Sans&quot;, sans-serif">
 				and my good friend Alex who helped me stay sane throughout this entire thing!
 			</Text>
+			<Text font="100 16px &quot;Public Sans&quot;, sans-serif">
+				This project is far from finished or complete but it's a pretty good exercise in web development and UI/UX so it's been really fun. If you have any questions don't hesitate to shoot a message!
+			</Text>
 		</Box>
-		<Components.Foot />
+		<Components.FinalFooter />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
@@ -266,7 +271,7 @@ export default (() => {
 				{"img { \n  -webkit-user-drag: none; \n  -khtml-user-drag: none; \n  -moz-user-drag: none; \n  -o-user-drag: none; \n  user-drag: none; \n}"}
 			</style>
 			<style place={"endOfHead"} rawKey={"619b330bb29696ccb45e780e"}>
-				{"/* width */\n::-webkit-scrollbar {\n  width: 5px;\n}\n\n/* Track */\n::-webkit-scrollbar-track {\n  background: #151515; \n}\n \n/* Handle */\n::-webkit-scrollbar-thumb {\n  background:rgb(225,230,223); \n}\n\n/* Handle on hover */\n::-webkit-scrollbar-thumb:hover {\n  background: #c58d2d; \n}\n\n/* box scroll */\nli::-webkit-scrollbar {\n  width: 5px;}\nli::-webkit-scrollbar-track {\n  background: #151515;}\nli::-webkit-scrollbar-thumb {\n  background:#151515;}\nli::-webkit-scrollbar-thumb:hover {\n  background: #151515;}"}
+				{"/* width */\n::-webkit-scrollbar {\n  width: 5px;\n}\n\n/* Track */\n::-webkit-scrollbar-track {\n  background: #151515; \n}\n \n/* Handle */\n::-webkit-scrollbar-thumb {\n  background:rgb(225,230,223); \n}\n\n/* Handle on hover */\n::-webkit-scrollbar-thumb:hover {\n  background: #c58d2d; \n}\n\n\n\n/* box scroll */\nli::-webkit-scrollbar {\n  width: 5px;}\nli::-webkit-scrollbar-track {\n  background: #151515;}\nli::-webkit-scrollbar-thumb {\n  background:#151515;}\nli::-webkit-scrollbar-thumb:hover {\n  background: #151515;}"}
 			</style>
 		</RawHtml>
 	</Theme>;

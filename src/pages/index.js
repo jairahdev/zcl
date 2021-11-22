@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Image, Icon, Box, Section, Button } from "@quarkly/widgets";
+import { Theme, Link, Text, Image, Icon, Box, Section, Button, LinkBox } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override } from "@quarkly/components";
@@ -24,10 +24,12 @@ export default (() => {
 			font="--base"
 			quarkly-title="COVER"
 			height="100vh"
+			min-height="100vh"
+			sm-align-content="center"
 		>
 			<Override slot="SectionContent" align-items="center" />
-			<Text color="rgba(135, 135, 135, 0.32)" font="300 16px/24px " md-font="300 12px/24px ">
-				MADE BY STUDIO FUGUE
+			<Text color="rgba(135, 135, 135, 0.32)" font="300 16px/24px " md-font="300 12px/24px " sm-font="100 12px --fontFamily-googlePublicSans">
+				behance.net/jairah
 			</Text>
 			<Image
 				width="40%"
@@ -54,6 +56,8 @@ export default (() => {
 				hover-transition="all 0.6s ease-in-out 0s"
 				md-width="20%"
 				md-height="20%"
+				sm-min-width="32px"
+				sm-min-height="32px"
 			>
 				<Icon
 					category="md"
@@ -75,6 +79,8 @@ export default (() => {
 					min-height="56px"
 					md-height="20%"
 					md-width="20%"
+					sm-min-width="32px"
+					sm-min-height="32px"
 				/>
 			</Box>
 		</Section>
@@ -85,6 +91,7 @@ export default (() => {
 			height="100vh"
 			quarkly-title="Profile"
 			padding="0 0 24px 0"
+			sm-height="120vh"
 		>
 			<Override
 				slot="SectionContent"
@@ -97,7 +104,100 @@ export default (() => {
 				height="inherit"
 				grid-template-rows="repeat(2,1fr) 2fr repeat(2, 1fr)"
 			/>
-			<Components.Nav />
+			<Box
+				display="grid"
+				grid-template-columns="1fr repeat(2, 2fr) repeat(3,2fr)"
+				grid-column="1 / span 6"
+				grid-row="1"
+				border-color="#c58d2d"
+				border-width="0 0 1px 0"
+				border-style="solid"
+				left="0px"
+				right="0.48399999999986676px"
+				bottom="1876.41px"
+				top="985.594px"
+				width="inherit"
+				quarkly-title="NAV"
+				sm-margin="0px 0px 24px 30p"
+				margin="24px 0px 24px 0px"
+				height="80px"
+				padding="0px 0px 0 0px"
+				md-margin="0px 0px 24px 0px"
+			>
+				<Button
+					grid-column="4"
+					background="rgba(0, 119, 204, 0)"
+					font="normal normal 100 16px/1.5 --fontFamily-googlePublicSans"
+					color="rgba(225, 230, 223, 0.7)"
+					sm-font="normal normal 100 10px/1.5 --fontFamily-googlePublicSans"
+					md-font="normal normal 100 12px/1.5 --fontFamily-googlePublicSans"
+					active-color="#c58d2d"
+					active-font="normal normal 300 16px/1.5 --fontFamily-googlePublicSans"
+					focus-font="normal normal 300 16px/1.5 --fontFamily-googlePublicSans"
+					focus-color="#c58d2d"
+					href="https://zhongchenle.netlify.app/profile"
+					type="link"
+					align-self="center"
+					justify-self="center"
+					text-decoration-line="initial"
+					target="_self"
+				>
+					PROFILE
+				</Button>
+				<Button
+					grid-column="5"
+					background="rgba(0, 119, 204, 0)"
+					sm-font="normal normal 100 10px/1.5 --fontFamily-googlePublicSans"
+					md-font="normal normal 100 12px/1.5 --fontFamily-googlePublicSans"
+					font="normal normal 100 16px/1.5 --fontFamily-googlePublicSans"
+					color="rgba(225, 230, 223, 0.7)"
+					focus-color="#c58d2d"
+					href="https://zhongchenle.netlify.app/philosophy"
+					type="link"
+					align-self="center"
+					justify-self="center"
+					text-decoration-line="initial"
+					target="_self"
+				>
+					PHILOSOPHY
+				</Button>
+				<Button
+					grid-column="6"
+					background="rgba(0, 119, 204, 0)"
+					font="normal normal 100 16px/1.5 --fontFamily-googlePublicSans"
+					color="rgba(225, 230, 223, 0.7)"
+					sm-font="normal normal 100 10px/1.5 --fontFamily-googlePublicSans"
+					md-font="normal normal 100 12px/1.5 --fontFamily-googlePublicSans"
+					focus-color="#c58d2d"
+					focus-font="normal normal 300 16px/1.5 --fontFamily-googlePublicSans"
+					href="https://zhongchenle.netlify.app/projects"
+					align-self="center"
+					justify-self="center"
+					type="link"
+					target="_self"
+					text-decoration-line="initial"
+				>
+					WORKS
+				</Button>
+				<LinkBox grid-column="1" grid-row="1" href="https://zhongchenle.netlify.app/" target="_self">
+					<Image
+						width="48px"
+						height="48px"
+						src="https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/ZCL-white.svg?v=2021-11-20T16:12:54.507Z"
+						display="block"
+						margin="auto auto auto auto"
+						grid-row="1"
+						grid-column="1"
+						sm-margin="auto auto auto 30px"
+						sm-width="32px"
+						sm-height="32px"
+						md-margin="auto auto auto 32px"
+						md-width="32px"
+						md-height="32px"
+						lg-margin="auto auto auto 50px"
+					/>
+				</LinkBox>
+			</Box>
 			<Box
 				background="transparent"
 				grid-row="2"
@@ -154,12 +254,12 @@ export default (() => {
 					hover-transition="all 0.3s ease-in-out 0s"
 					transition="all 0.3s ease-in-out 0s"
 					cursor="help"
-					md-font="italic 100 12px/180% &quot;Public Sans&quot;, sans-serif"
+					md-font="italic 100 10px/180% &quot;Public Sans&quot;, sans-serif"
 					sm-hover-font="italic 400 10px/180% &quot;Public Sans&quot;, sans-serif"
 					md-width="auto"
-					md-hover-font="300 12px --fontFamily-googlePublicSans"
+					md-hover-font="300 10px --fontFamily-googlePublicSans"
 					md-hover-letter-spacing=".5px"
-					md-letter-spacing="0.5px"
+					md-letter-spacing="0px"
 					href="https://zhongchenle.netlify.app/profile/"
 					type="link"
 					text-decoration-line="initial"
@@ -177,14 +277,17 @@ export default (() => {
 				margin="auto 0px auto 0px"
 				width="auto"
 				height="100%"
+				lg-align-self="center"
+				lg-justify-self="start"
 			>
 				<Image
 					src="https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/LANDING_1.png?v=2021-11-20T18:14:10.972Z"
-					border-radius="50px"
+					border-radius="25px"
 					height="100%"
-					sm-border-radius="25px"
-					sm-height="calc(100vh - 40%)"
-					sm-margin="0px 0px 0px -30px"
+					sm-border-radius="5px"
+					sm-height="30%"
+					lg-height="70%"
+					lg-margin="50px 0px 0px 0px"
 				/>
 			</Box>
 			<Box
@@ -219,6 +322,8 @@ export default (() => {
 					md-width="24px"
 					md-height="24px"
 					sm-margin="auto 0px auto 10px"
+					sm-width="12px"
+					sm-height="12px"
 				/>
 				<Text
 					display="inline"
@@ -230,6 +335,7 @@ export default (() => {
 					md-font="400 10px &quot;Public Sans&quot;, sans-serif"
 					md-margin="22px 0px 16px 20px"
 					sm-margin="14px 0px 16px 10px"
+					sm-font="400 8px &quot;Public Sans&quot;, sans-serif"
 				>
 					Singer
 				</Text>
@@ -265,6 +371,8 @@ export default (() => {
 					md-width="24px"
 					md-height="24px"
 					sm-margin="auto 0px auto 10px"
+					sm-width="12px"
+					sm-height="12px"
 				/>
 				<Text
 					display="inline"
@@ -276,6 +384,7 @@ export default (() => {
 					md-font="400 10px &quot;Public Sans&quot;, sans-serif"
 					md-margin="22px 0px 16px 20px"
 					sm-margin="14px 0px 16px 10px"
+					sm-font="400 8px &quot;Public Sans&quot;, sans-serif"
 				>
 					Performer
 				</Text>
@@ -311,6 +420,8 @@ export default (() => {
 					md-width="24px"
 					md-height="24px"
 					sm-margin="auto 0px auto 10px"
+					sm-width="12px"
+					sm-height="12px"
 				/>
 				<Text
 					display="inline"
@@ -322,6 +433,7 @@ export default (() => {
 					md-font="400 10px &quot;Public Sans&quot;, sans-serif"
 					md-margin="22px 0px 16px 20px"
 					sm-margin="14px 0px 16px 10px"
+					sm-font="400 8px &quot;Public Sans&quot;, sans-serif"
 				>
 					Radio Host
 				</Text>
@@ -358,6 +470,8 @@ export default (() => {
 					md-width="24px"
 					md-height="24px"
 					sm-margin="auto 0px auto 10px"
+					sm-width="12px"
+					sm-height="12px"
 				/>
 				<Text
 					display="inline"
@@ -369,13 +483,14 @@ export default (() => {
 					md-font="400 10px &quot;Public Sans&quot;, sans-serif"
 					md-margin="22px 0px 16px 20px"
 					sm-margin="14px 0px 16px 10px"
+					sm-font="400 8px &quot;Public Sans&quot;, sans-serif"
 				>
 					Dancer
 				</Text>
 			</Box>
 		</Section>
 		<Section
-			height="100%"
+			height="100vh"
 			min-height="100vh"
 			width="100%"
 			min-width="100vh"
@@ -384,6 +499,9 @@ export default (() => {
 			align-content="center"
 			margin="50px 0 50px 0"
 			quarkly-title="Philosophy"
+			sm-min-width="100%"
+			sm-height="100%"
+			sm-min-height="100%"
 		>
 			<Override
 				slot="SectionContent"
@@ -411,6 +529,8 @@ export default (() => {
 				sm-width="64px"
 				sm-height="64px"
 				sm-margin="0px 0px 0px -20px"
+				md-margin="0px 0px 0px -20px"
+				md-hover-transform="scale(1.2)"
 			/>
 			<Image
 				width="70%"
@@ -444,20 +564,23 @@ export default (() => {
 				cursor="help"
 				hover-letter-spacing=".5 px"
 				hover-font="italic 300 14px/180% &quot;Public Sans&quot;, sans-serif"
-				md-font="italic 100 12px/180% &quot;Public Sans&quot;, sans-serif"
+				md-font="italic 100 10px/180% &quot;Public Sans&quot;, sans-serif"
 				md-margin="0px 0px 0px 0px"
 				sm-margin="30px 0px -30px 0px"
 				sm-padding="8px 5px 8px 5px"
 				sm-width="auto"
 				sm-hover-font="italic 300 10px/180% &quot;Public Sans&quot;, sans-serif"
 				md-width="auto"
-				md-hover-font="300 12px --fontFamily-googlePublicSans"
+				md-hover-font="300 10px --fontFamily-googlePublicSans"
 				md-hover-letter-spacing=".5px"
-				md-letter-spacing="0.5px"
+				md-letter-spacing="0px"
 				type="link"
 				href="https://zhongchenle.netlify.app/philosophy"
 				target="_self"
 				text-decoration-line="initial"
+				lg-margin="0px 0px 0px 0px"
+				lg-align-self="center"
+				lg-grid-row="2"
 			>
 				Read more 
 →{" "}
@@ -468,10 +591,16 @@ export default (() => {
 			min-height="100vh"
 			min-width="100vh"
 			width="100%"
-			height="100%"
-			sm-padding="24px 20px 24px 20px"
+			height="140vh"
 			md-padding="24px 20px 24px 20px"
 			quarkly-title="Works"
+			sm-align-content="center"
+			sm-align-items="center"
+			sm-justify-content="center"
+			sm-height="100%"
+			sm-min-height="100%"
+			sm-width="100%"
+			sm-min-width="100%"
 		>
 			<Override
 				slot="SectionContent"
@@ -522,13 +651,13 @@ export default (() => {
 				cursor="help"
 				hover-letter-spacing=".5 px"
 				hover-font="italic 300 14px/180% &quot;Public Sans&quot;, sans-serif"
-				md-font="italic 100 12px/180% &quot;Public Sans&quot;, sans-serif"
+				md-font="italic 100 10px/180% &quot;Public Sans&quot;, sans-serif"
 				sm-width="auto"
 				sm-hover-font="italic 300 10px/180% &quot;Public Sans&quot;, sans-serif"
 				md-width="auto"
-				md-hover-font="300 12px --fontFamily-googlePublicSans"
+				md-hover-font="300 10px --fontFamily-googlePublicSans"
 				md-hover-letter-spacing=".5px"
-				md-letter-spacing="0.5px"
+				md-letter-spacing="0px"
 			>
 				View all  →{" "}
 			</Button>
@@ -589,8 +718,17 @@ export default (() => {
 			<Image src="https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/WORK_3.png?v=2021-11-21T13:20:55.450Z" grid-column="1" grid-row="1" width="100%" />
 			<Image src="https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/WORK_7.png?v=2021-11-21T13:42:48.142Z" grid-column="1" grid-row="3" width="100%" />
 		</Section>
-		<Components.Foot />
-		<Components.QuarklycommunityKitBackToTop showAfter="1920px" showAlways />
+		<Components.FinalFooter sm-min-width="100%" sm-max-width="100%">
+			<Override slot="link" />
+			<Override slot="link5" />
+			<Override slot="text3" />
+			<Override slot="link1" />
+			<Override slot="link2" />
+			<Override slot="link3" />
+			<Override slot="link4" />
+			<Override slot="box4" />
+		</Components.FinalFooter>
+		<Components.QuarklycommunityKitBackToTop showAfter="1920px" showAlways={false} />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
@@ -627,7 +765,7 @@ export default (() => {
 				{"img { \n  -webkit-user-drag: none; \n  -khtml-user-drag: none; \n  -moz-user-drag: none; \n  -o-user-drag: none; \n  user-drag: none; \n}"}
 			</style>
 			<style place={"endOfHead"} rawKey={"619b330bb29696ccb45e780e"}>
-				{"/* width */\n::-webkit-scrollbar {\n  width: 5px;\n}\n\n/* Track */\n::-webkit-scrollbar-track {\n  background: #151515; \n}\n \n/* Handle */\n::-webkit-scrollbar-thumb {\n  background:rgb(225,230,223); \n}\n\n/* Handle on hover */\n::-webkit-scrollbar-thumb:hover {\n  background: #c58d2d; \n}\n\n/* box scroll */\nli::-webkit-scrollbar {\n  width: 5px;}\nli::-webkit-scrollbar-track {\n  background: #151515;}\nli::-webkit-scrollbar-thumb {\n  background:#151515;}\nli::-webkit-scrollbar-thumb:hover {\n  background: #151515;}"}
+				{"/* width */\n::-webkit-scrollbar {\n  width: 5px;\n}\n\n/* Track */\n::-webkit-scrollbar-track {\n  background: #151515; \n}\n \n/* Handle */\n::-webkit-scrollbar-thumb {\n  background:rgb(225,230,223); \n}\n\n/* Handle on hover */\n::-webkit-scrollbar-thumb:hover {\n  background: #c58d2d; \n}\n\n\n\n/* box scroll */\nli::-webkit-scrollbar {\n  width: 5px;}\nli::-webkit-scrollbar-track {\n  background: #151515;}\nli::-webkit-scrollbar-thumb {\n  background:#151515;}\nli::-webkit-scrollbar-thumb:hover {\n  background: #151515;}"}
 			</style>
 		</RawHtml>
 	</Theme>;

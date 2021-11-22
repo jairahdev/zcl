@@ -6,32 +6,38 @@ const pageStyles = {
     "404": {
         "background": "#151515",
         "font": "16px --fontFamily-googlePublicSans",
-        "color": "#e1e6df"
+        "color": "#e1e6df",
+        "overflow-x": "hidden"
     },
     "index": {
         "background": "#151515",
         "font": "16px --fontFamily-googlePublicSans",
-        "color": "#e1e6df"
+        "color": "#e1e6df",
+        "overflow-x": "hidden"
     },
     "profile": {
         "background": "#151515",
         "font": "16px --fontFamily-googlePublicSans",
-        "color": "#e1e6df"
+        "color": "#e1e6df",
+        "overflow-x": "hidden"
     },
     "philosophy": {
         "background": "#151515",
         "font": "16px --fontFamily-googlePublicSans",
-        "color": "#e1e6df"
+        "color": "#e1e6df",
+        "overflow-x": "hidden"
     },
     "projects": {
         "background": "#151515",
         "font": "16px --fontFamily-googlePublicSans",
-        "color": "#e1e6df"
+        "color": "#e1e6df",
+        "overflow-x": "hidden"
     },
     "credits": {
         "background": "#151515",
         "font": "16px --fontFamily-googlePublicSans",
-        "color": "#e1e6df"
+        "color": "#e1e6df",
+        "overflow-x": "hidden"
     }
 };
 
