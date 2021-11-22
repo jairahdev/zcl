@@ -27,6 +27,11 @@ const pageStyles = {
         "background": "#151515",
         "font": "16px --fontFamily-googlePublicSans",
         "color": "#e1e6df"
+    },
+    "credits": {
+        "background": "#151515",
+        "font": "16px --fontFamily-googlePublicSans",
+        "color": "#e1e6df"
     }
 };
 

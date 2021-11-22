@@ -49,7 +49,8 @@ export default {
 		"serifGeorgia": "Constantia, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif",
 		"serifGaramond": "'Palatino Linotype', Palatino, Palladio, 'URW Palladio L', 'Book Antiqua', Baskerville, 'Bookman Old Style', 'Bitstream Charter', 'Nimbus Roman No9 L', Garamond, 'Apple Garamond', 'ITC Garamond Narrow', 'New Century Schoolbook', 'Century Schoolbook', 'Century Schoolbook L', Georgia, serif",
 		"googlePublicSans": "\"Public Sans\", sans-serif",
-		"googlePlayfairDisplay": "\"Playfair Display\", serif"
+		"googlePlayfairDisplay": "\"Playfair Display\", serif",
+		"googlePrata": "\"Prata\", serif"
 	},
 	"font": {
 		"headline1": "normal 900 72px/1.2 --fontFamily-googlePublicSans",
@@ -199,6 +200,16 @@ export default {
 					"700italic",
 					"800italic",
 					"900italic"
+				]
+			}
+		},
+		"Prata": {
+			"family": "Prata",
+			"type": "google-fonts",
+			"meta": {
+				"category": "serif",
+				"variants": [
+					"regular"
 				]
 			}
 		}

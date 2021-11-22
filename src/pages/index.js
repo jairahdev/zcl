@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Image, Icon, Box, Section, Button, Span } from "@quarkly/widgets";
+import { Theme, Link, Text, Image, Icon, Box, Section, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override } from "@quarkly/components";
@@ -97,11 +97,7 @@ export default (() => {
 				height="inherit"
 				grid-template-rows="repeat(2,1fr) 2fr repeat(2, 1fr)"
 			/>
-			<Components.Nav>
-				<Override slot="button" />
-				<Override slot="button2" />
-				<Override slot="button1" />
-			</Components.Nav>
+			<Components.Nav />
 			<Box
 				background="transparent"
 				grid-row="2"
@@ -109,6 +105,7 @@ export default (() => {
 				width="100%"
 				justify-self="stretch"
 				grid-column="2 / span 2"
+				font="72px --fontFamily-googlePlayfairDisplay"
 			>
 				<Text
 					as="h1"
@@ -163,6 +160,10 @@ export default (() => {
 					md-hover-font="300 12px --fontFamily-googlePublicSans"
 					md-hover-letter-spacing=".5px"
 					md-letter-spacing="0.5px"
+					href="https://zhongchenle.netlify.app/profile/"
+					type="link"
+					text-decoration-line="initial"
+					target="_self"
 				>
 					Learn more 
 →{" "}
@@ -453,6 +454,10 @@ export default (() => {
 				md-hover-font="300 12px --fontFamily-googlePublicSans"
 				md-hover-letter-spacing=".5px"
 				md-letter-spacing="0.5px"
+				type="link"
+				href="https://zhongchenle.netlify.app/philosophy"
+				target="_self"
+				text-decoration-line="initial"
 			>
 				Read more 
 →{" "}
@@ -584,61 +589,7 @@ export default (() => {
 			<Image src="https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/WORK_3.png?v=2021-11-21T13:20:55.450Z" grid-column="1" grid-row="1" width="100%" />
 			<Image src="https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/WORK_7.png?v=2021-11-21T13:42:48.142Z" grid-column="1" grid-row="3" width="100%" />
 		</Section>
-		<Section padding="100px 0 24px 0" quarkly-title="FOOTER">
-			<Override slot="SectionContent" display="grid" grid-template-columns="1fr 2fr repeat(2, 1fr)" />
-			<Box grid-column="1" grid-row="1" align-self="center" justify-self="center">
-				<Image width="64px" height="64px" src="https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/ZCL-white.svg?v=2021-11-20T16:12:54.507Z" margin="auto auto auto auto" />
-			</Box>
-			<Box grid-column="4" grid-row="1" padding="10px 10px 10px 10px" background="none">
-				<Text md-font="14px &quot;Public Sans&quot;, sans-serif">
-					Acknowledgements
-				</Text>
-				<Text font="300 14px &quot;Public Sans&quot;, sans-serif" md-font="300 12px &quot;Public Sans&quot;, sans-serif" color="rgba(214, 214, 214, 0.7)">
-					Please click here for a full list of credits for this project.
-				</Text>
-			</Box>
-			<Box grid-column="3" grid-row="1" padding="10px 10px 10px 10px" background="none">
-				<Text md-font="14px &quot;Public Sans&quot;, sans-serif">
-					Navigation
-				</Text>
-				<Text font="300 14px &quot;Public Sans&quot;, sans-serif" md-font="300 12px &quot;Public Sans&quot;, sans-serif" color="rgba(214, 214, 214, 0.7)">
-					Home
-				</Text>
-				<Text font="300 14px &quot;Public Sans&quot;, sans-serif" md-font="300 12px &quot;Public Sans&quot;, sans-serif" color="rgba(214, 214, 214, 0.7)">
-					Profile
-				</Text>
-				<Text font="300 14px &quot;Public Sans&quot;, sans-serif" md-font="300 12px &quot;Public Sans&quot;, sans-serif" color="rgba(214, 214, 214, 0.7)">
-					Philosophy
-				</Text>
-				<Text font="300 14px &quot;Public Sans&quot;, sans-serif" md-font="300 12px &quot;Public Sans&quot;, sans-serif" color="rgba(214, 214, 214, 0.7)">
-					Projects
-				</Text>
-			</Box>
-			<Box grid-column="2" grid-row="1" padding="10px 10px 10px 10px" background="none">
-				<Text md-font="14px &quot;Public Sans&quot;, sans-serif">
-					Project
-				</Text>
-				<Text font="200 14px &quot;Public Sans&quot;, sans-serif" color="rgba(214, 214, 214, 0.7)">
-					<Span
-						overflow-wrap="normal"
-						word-break="normal"
-						white-space="normal"
-						text-indent="0"
-						text-overflow="clip"
-						hyphens="manual"
-						md-font="300 12px &quot;Public Sans&quot;, sans-serif"
-					>
-						© Jairah  |  Website Design, Copy, and Visual Design
-						<br />
-						<br />
-						See this project on Behance and Tumblr.
-						<br />
-						<br />
-						Disclaimer: Fair use keme
-					</Span>
-				</Text>
-			</Box>
-		</Section>
+		<Components.Foot />
 		<Components.QuarklycommunityKitBackToTop showAfter="1920px" showAlways />
 		<Link
 			font={"--capture"}

@@ -56,7 +56,8 @@ const overrides = {
 			"type": "link",
 			"align-self": "center",
 			"justify-self": "center",
-			"text-decoration-line": "initial"
+			"text-decoration-line": "initial",
+			"target": "_self"
 		}
 	},
 	"button1": {
@@ -70,7 +71,11 @@ const overrides = {
 			"color": "rgba(225, 230, 223, 0.7)",
 			"focus-color": "#c58d2d",
 			"href": "https://zhongchenle.netlify.app/philosophy",
-			"target": "_blank"
+			"type": "link",
+			"align-self": "center",
+			"justify-self": "center",
+			"text-decoration-line": "initial",
+			"target": "_self"
 		}
 	},
 	"button2": {
@@ -84,9 +89,12 @@ const overrides = {
 			"md-font": "normal normal 100 12px/1.5 --fontFamily-googlePublicSans",
 			"focus-color": "#c58d2d",
 			"focus-font": "normal normal 300 16px/1.5 --fontFamily-googlePublicSans",
-			"children": "PROJECTS",
 			"href": "https://zhongchenle.netlify.app/projects",
-			"target": "_blank"
+			"align-self": "center",
+			"justify-self": "center",
+			"type": "link",
+			"target": "_self",
+			"text-decoration-line": "initial"
 		}
 	}
 };
@@ -106,7 +114,7 @@ const Nav = props => {
 			PHILOSOPHY
 		</Button>
 		<Button {...override("button2")}>
-			WORKS
+			PROJECTS
 		</Button>
 		{children}
 	</Box>;

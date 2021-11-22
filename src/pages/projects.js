@@ -16,7 +16,7 @@ export default (() => {
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/Favicon.png?v=2021-11-21T13:45:50.370Z"} type={"image/x-icon"} />
 		</Helmet>
-		<Components.Nav margin="0 0px 24px 0px" />
+		<Components.Nav margin="0 0px 0px 0px" />
 		<Box
 			display="grid"
 			grid-template-columns="repeat(6,1fr)"
@@ -1084,7 +1084,7 @@ export default (() => {
 				</Box>
 			</Box>
 		</Box>
-		<Components.Footer />
+		<Components.Foot />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}

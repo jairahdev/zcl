@@ -9,7 +9,8 @@ export default {
 				"6195d547255a6d001e9c5f4f",
 				"619a43d054a110001e4a66d4",
 				"619a7db973e125001e1b45ba",
-				"619b54c8255a6d001e9c6480"
+				"619b54c8255a6d001e9c6480",
+				"619b754754a110001e4a68a6"
 			]
 		},
 		"6195d547255a6d001e9c5f4d": {
@@ -36,6 +37,11 @@ export default {
 			"id": "619b54c8255a6d001e9c6480",
 			"pageUrl": "projects",
 			"name": "Projects"
+		},
+		"619b754754a110001e4a68a6": {
+			"id": "619b754754a110001e4a68a6",
+			"pageUrl": "credits",
+			"name": "Credits"
 		}
 	},
 	"mode": "production",
