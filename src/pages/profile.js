@@ -15,9 +15,9 @@ export default (() => {
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/Favicon.png?v=2021-11-21T13:45:50.370Z"} type={"image/x-icon"} />
 		</Helmet>
-		<Components.Nav margin="0px 0px 24px 0px">
-			<Override slot="button" color="#c58d2d " font="normal normal 300 16px/1.5 --fontFamily-googlePublicSans" />
-		</Components.Nav>
+		<Components.Finalnav margin="0PX 0px 24px 0px">
+			<Override slot="button" font="normal normal 300 16px/1.5 --fontFamily-googlePublicSans" color="#c58d2d " />
+		</Components.Finalnav>
 		<Box
 			width="100%"
 			display="grid"
@@ -216,8 +216,9 @@ export default (() => {
 				grid-row="1 / span 4"
 				border-radius="25px"
 				width="70%"
-				justify-self="center"
+				justify-self="start"
 				align-self="start"
+				height="455px"
 			/>
 			<Text
 				grid-column="2 / span 2"
