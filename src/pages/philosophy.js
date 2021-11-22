@@ -19,11 +19,11 @@ export default (() => {
 			<Override slot="button1" font="normal normal 300 16px/1.5 --fontFamily-googlePublicSans" color="#c58d2d " />
 		</Components.Finalnav>
 		<Box
-			height="160vh"
+			height="100%"
 			min-height="100vh"
 			width="100%"
 			min-width="100%"
-			padding="0px 60px 0px 60px"
+			padding="0px 10% 0px 10%"
 			sm-height="100%"
 			lg-height="100%"
 		>

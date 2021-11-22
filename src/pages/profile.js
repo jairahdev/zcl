@@ -207,18 +207,18 @@ export default (() => {
 			grid-template-columns="1fr .5fr repeat(3, 1fr)"
 			grid-auto-rows="120px 50px 50px 50px 50px 50px"
 			height="100%"
-			min-height="80vh"
+			min-height="100vh"
 			md-grid-template-rows="120px  25px 25px 25px 25px 25px"
+			border-radius="25px"
 		>
 			<Image
 				src="https://uploads.quarkly.io/6195d547255a6d001e9c5f4a/images/PROFILE_2.png?v=2021-11-22T11:52:05.851Z"
 				grid-column="4 / span 2"
-				grid-row="1 / span 4"
+				grid-row="1 / span 6"
 				border-radius="25px"
 				width="70%"
 				justify-self="start"
 				align-self="start"
-				height="455px"
 			/>
 			<Text
 				grid-column="2 / span 2"
